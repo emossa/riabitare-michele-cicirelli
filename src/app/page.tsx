@@ -1,20 +1,35 @@
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-bold">Hello World</h1>
-      <p className="text-lg text-center">
-        Welcome to your new project. This is a simple starter template for
-        building a website with React, Tailwind CSS, and Vite.
-      </p>
-      <a
-        href="https://vitejs.dev/guide/features.html"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 underline"
-      >
-        Learn Vite
-      </a>
+    <main className="">
+      {/* HERO */}
+      <section className="flex flex-col items-center justify-center gap-8 bg-black text-white">
+        <h1 className="text-6xl font-bold text-center">
+          Welcome to <span className="text-blue-500">Create Next App</span>
+        </h1>
+        <p className="text-xl text-center">
+          Start building your next project with Create Next App.
+        </p>
+        <div className="flex gap-4">
+          <a
+            href="https://nextjs.org/docs"
+            className="btn btn-primary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Documentation
+          </a>
+          <a
+            href="#"
+            className="btn btn-secondary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Learn More
+          </a>
+        </div>
+      </section>
+
     </main>
   );
 }
