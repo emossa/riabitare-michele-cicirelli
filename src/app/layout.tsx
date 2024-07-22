@@ -26,6 +26,9 @@ export default function RootLayout({
           <Navbar />
         </header>
         {children}
+        <div className="mt-[50px] h-[400px] bg-primary text-white text-center py-4">
+          <p>Footer</p>
+        </div>
       </body>
     </html>
   );
