@@ -25,6 +25,8 @@ export const Gallery = () => {
                     <CarouselItem className="basis-1/2 lg:basis-1/4">
                         <ImagePopup src="/hero.jpg" alt="Hero" width={320} height={180} />
                     </CarouselItem>
+                    <CarouselNext className='hidden lg:block' />
+                    <CarouselPrevious className='hidden lg:block' />
                 </CarouselContent>
             </Carousel>
         </div>
