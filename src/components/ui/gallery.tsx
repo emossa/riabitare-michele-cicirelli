@@ -11,7 +11,7 @@ import { ImagePopup } from "./image-popup";
 export const Gallery = () => {
     return (
         <div className="flex flex-col items-center">
-            <Carousel className="w-full mt-10">
+            <Carousel className="w-full mt-10 px-10">
                 <CarouselContent>
                     <CarouselItem className="basis-1/2 lg:basis-1/4">
                         <ImagePopup src="/hero.jpg" alt="Hero" width={320} height={180} />
@@ -25,11 +25,7 @@ export const Gallery = () => {
                     <CarouselItem className="basis-1/2 lg:basis-1/4">
                         <ImagePopup src="/hero.jpg" alt="Hero" width={320} height={180} />
                     </CarouselItem>
-
-
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
             </Carousel>
         </div>
     )
