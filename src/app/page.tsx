@@ -1,6 +1,7 @@
 import { Description } from "@/components/ui/description";
 import { Hero } from "@/components/ui/hero";
 import { Gallery } from "@/components/ui/gallery";
+import { Servizi } from "@/components/ui/servizi";
 
 
 export default function Home() {
@@ -10,6 +11,8 @@ export default function Home() {
       <div className="lg:px-24">
         <Description />
         <Gallery />
+        <Servizi />
+
 
       </div>
     </main>

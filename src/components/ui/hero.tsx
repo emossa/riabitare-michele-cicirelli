@@ -5,7 +5,7 @@ export const Hero = () => {
         <>
             <div className="w-full h-[80vh] relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary" />
-                <Image src="/hero.jpg" alt="Hero" width={1920} height={1080} className='absolute top-0 left-0 w-full h-full object-cover' />
+                <Image src="/hero.webp" alt="Hero" width={1920} height={1080} className='absolute top-0 left-0 w-full h-full object-cover' />
                 <div className="absolute inset-0 bg-black opacity-50" />
 
                 <div className="absolute inset-0 flex items-center justify-center">

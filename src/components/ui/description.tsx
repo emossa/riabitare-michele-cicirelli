@@ -3,9 +3,12 @@ export const Description = () => {
     return (
         <div className="flex my-10 lg:my-24 flex-col lg:flex-row px-10 lg:px-0">
             <div className="lg:w-1/2 mt-10 flex items-center justify-center">
-                <div className='relative flex h-24 items-end'>
+                <div className='relative flex h-36 lg:h-24 items-end'>
                     <div className="absolute top-0 left-0 w-32 h-4 bg-gray-200"></div>
-                    <h2 className="text-4xl font-bold mt-8">Riabitare Ristrutturazioni</h2>
+                    <div >
+                        <h2 className="text-4xl font-bold mt-8">Riabitare Ristrutturazioni</h2>
+                        <span className="text-primary text-2xl block">di Michele Cicirelli</span>
+                    </div>
                 </div>
 
             </div>

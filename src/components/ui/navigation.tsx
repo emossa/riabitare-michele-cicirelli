@@ -13,13 +13,16 @@ import { ListItem } from "./list-item";
 import { Drawer, DrawerContent, DrawerTrigger } from "./drawer";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@radix-ui/react-accordion";
 import { MenuIcon } from "lucide-react";
+import Image from "next/image";
 
 export const DesktopNavigation = () => {
     return (
         <div className="px-24 w-full flex justify-between">
             <div className="flex items-center">
                 <Link href="/">
-                    <span className="text-4xl font-bold">Logo</span>
+                    <span className="text-4xl font-bold">
+                        <Image src="/logo.png" width={151} height={101} alt="" />
+                    </span>
                 </Link>
             </div>
             <div className="flex items-center">
@@ -151,7 +154,7 @@ export const MobileNavigation = () => {
             </Drawer>
             <div className="flex items-center">
                 <Link href="/">
-                    <span className="text-3xl font-bold">Logo</span>
+                    <Image src="/logo.png" width={100} height={69} alt="" />
                 </Link>
             </div>
         </>
