@@ -27,10 +27,10 @@ export default function RootLayout({
           <Navbar />
         </header>
         {children}
-        <ChatWidget />
-        <div className="mt-[50px] h-[400px] bg-primary text-white text-center py-4">
+        <div className="h-[40px] mt-[100px] bg-primary text-white  py-4 flex justify-center items-center">
           <p>Footer</p>
         </div>
+        <ChatWidget />
       </body>
     </html>
   );

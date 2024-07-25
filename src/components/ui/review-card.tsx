@@ -2,9 +2,9 @@ export const ReviewCard = (
     { name, review }: { name: string, review: string }
 ) => {
     return (
-        <div className="h-full bg-gray-200 rounded-lg p-8 text-center ">
+        <div className="h-full bg-secondary p-8 text-center ">
             <p className="font-bold uppercase">{name}</p>
-            <p className="text-xl font-light italic text-gray-700">{review}</p>
+            <p className="text-xl font-light italic text-primary">{review}</p>
             <div className="flex items-center justify-center space-x-2 mt-4">
                 <svg className="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                     fill="currentColor" stroke="currentColor">
