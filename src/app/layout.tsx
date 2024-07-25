@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/ui/navbar";
 import { cn } from "@/lib/utils";
+import ChatWidget from "@/components/ui/chat-widget";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans", });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
           <Navbar />
         </header>
         {children}
+        <ChatWidget />
         <div className="mt-[50px] h-[400px] bg-primary text-white text-center py-4">
           <p>Footer</p>
         </div>
