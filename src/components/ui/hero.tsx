@@ -12,7 +12,7 @@ export const Hero = () => {
                     <div className="text-white text-center">
                         <h1 className="text-4xl font-bold">Riabitare Ristrutturazioni</h1>
                         <p className="text-lg">di Michele Cicirelli</p>
-                        <button className="bg-primary text-white px-4 py-2 rounded-lg mt-4">Richiedi un preventivo</button>
+                        <button className="bg-primary text-white px-4 py-2 mt-4">Richiedi un preventivo</button>
                     </div>
                 </div>
             </div>

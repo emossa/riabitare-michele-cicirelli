@@ -25,7 +25,7 @@ export const ImagePopup = ({ description, ...props }: ImageProps & { description
                         {description}
                     </DialogDescription>}
                     <DialogFooter>
-                        <button className="bg-primary text-white px-4 py-2 rounded-lg mt-4">Richiedi un preventivo</button>
+                        <button className="bg-primary text-white px-4 py-2 mt-4">Richiedi un preventivo</button>
                     </DialogFooter>
                 </DialogContent>
             </Dialog>

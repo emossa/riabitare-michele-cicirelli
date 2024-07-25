@@ -13,21 +13,22 @@ export const Gallery = () => {
         <div className="flex flex-col items-center">
             <Carousel className="w-full mt-10 px-10">
                 <CarouselContent>
-                    <CarouselItem className="basis-1/2 lg:basis-1/4">
+                    <CarouselItem className="basis-9/12 lg:basis-1/4">
                         <ImagePopup src="/hero.jpg" alt="Hero" width={320} height={180} />
                     </CarouselItem>
-                    <CarouselItem className="basis-1/2 lg:basis-1/4">
+                    <CarouselItem className="basis-9/12 lg:basis-1/4">
                         <ImagePopup src="/hero.jpg" alt="Hero" width={320} height={180} />
                     </CarouselItem>
-                    <CarouselItem className="basis-1/2 lg:basis-1/4">
+                    <CarouselItem className="basis-9/12 lg:basis-1/4">
                         <ImagePopup src="/hero.jpg" alt="Hero" width={320} height={180} />
                     </CarouselItem>
-                    <CarouselItem className="basis-1/2 lg:basis-1/4">
+                    <CarouselItem className="basis-9/12 lg:basis-1/4">
                         <ImagePopup src="/hero.jpg" alt="Hero" width={320} height={180} />
                     </CarouselItem>
-                    <CarouselNext className='hidden lg:block' />
-                    <CarouselPrevious className='hidden lg:block' />
+
                 </CarouselContent>
+                <CarouselNext className='hidden lg:block' />
+                <CarouselPrevious className='hidden lg:block' />
             </Carousel>
         </div>
     )
