@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/ui/navbar";
 import { cn } from "@/lib/utils";
 import ChatWidget from "@/components/ui/chat-widget";
+import { Footer } from "@/components/ui/footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans", });
 
@@ -27,9 +28,9 @@ export default function RootLayout({
           <Navbar />
         </header>
         {children}
-        <div className="h-[40px] mt-[100px] bg-primary text-white  py-4 flex justify-center items-center">
-          <p>Footer</p>
-        </div>
+        <footer>
+          <Footer />
+        </footer>
         <ChatWidget />
       </body>
     </html>

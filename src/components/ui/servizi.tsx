@@ -10,7 +10,7 @@ export const Servizi = () => {
             </div>
             <div className="flex flex-col lg:flex-row justify-between mt-14 px-10 items-center lg:items-start flex-wrap">
                 <div className="flex flex-col items-center max-w-[350px] border px-10 py-5 shadow-xl min-h-[400px] mt-5">
-                    <House size={70} />
+                    <House size={70} className='text-primary' />
                     <div>
                         <p className="text-2xl font-bold mt-8">Ristrutturazione chiavi in mano</p>
                         <p className="text-lg">
@@ -20,7 +20,7 @@ export const Servizi = () => {
                     <button className="bg-primary text-white px-4 py-2 mt-4">Scopri di più</button>
                 </div>
                 <div className="flex flex-col items-center max-w-[350px] border px-10 py-5 shadow-xl min-h-[400px] mt-5">
-                    <ShowerHead size={70} />
+                    <ShowerHead size={70} className='text-primary' />
                     <div>
                         <p className="text-2xl font-bold mt-8" >Rifacimento del bagno</p>
                         <p className="text-lg">
@@ -30,7 +30,7 @@ export const Servizi = () => {
                     <button className="bg-primary text-white px-4 py-2 mt-4">Scopri di più</button>
                 </div>
                 <div className="flex flex-col items-center max-w-[350px] border px-10 py-5 shadow-xl min-h-[400px] mt-5">
-                    <HousePlug size={70} />
+                    <HousePlug size={70} className='text-primary' />
                     <div>
                         <p className="text-2xl font-bold mt-8">Impianti elettrici</p>
                         <p className="text-lg">
@@ -40,7 +40,7 @@ export const Servizi = () => {
                     <button className="bg-primary text-white px-4 py-2 mt-4">Scopri di più</button>
                 </div>
                 <div className="flex flex-col items-center max-w-[350px] border px-10 py-5 shadow-xl min-h-[400px] mt-5">
-                    <ThermometerSun size={70} />
+                    <ThermometerSun size={70} className='text-primary' />
                     <div>
                         <p className="text-2xl font-bold mt-8">Impianti termici</p>
                         <p className="text-lg">
