@@ -42,9 +42,11 @@ export const DesktopNavigation = () => {
                                     <ListItem title="Ristrutturazione chiavi in mano">
                                         Ristrutturiamo la tua casa in modo completo.
                                     </ListItem>
-                                    <ListItem title="Ristrutturazione bagno">
-                                        Ristrutturiamo il tuo bagno in modo completo.
-                                    </ListItem>
+                                    <Link href="/rifacimento-bagni" passHref>
+                                        <ListItem title="Ristrutturazione bagno">
+                                            Ristrutturiamo il tuo bagno in modo completo.
+                                        </ListItem>
+                                    </Link>
                                     <ListItem title="Impianti elettrici">
                                         Progettiamo e realizziamo impianti elettrici per la tua casa.
                                     </ListItem>
