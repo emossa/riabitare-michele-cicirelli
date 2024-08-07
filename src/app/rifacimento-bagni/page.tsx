@@ -1,9 +1,7 @@
 import { Description } from "@/components/ui/description";
 import { Hero } from "@/components/ui/hero";
-import { Gallery } from "@/components/ui/gallery";
 import { Servizi } from "@/components/ui/servizi";
 import { Reviews } from "@/components/ui/reviews";
-import Image from "next/image";
 import { CtaFooter } from "@/components/ui/cta-footer";
 import { GalleryWithThumbnails } from "@/components/ui/galleryWithThumbnails";
 

@@ -36,8 +36,8 @@ export const GalleryWithThumbnails = (
 
     }, [api, api2])
     return (
-        <div className="flex gap-20">
-            <div className='w-[50%]'>
+        <div className="flex flex-col lg:flex-row gap-20 px-5">
+            <div className='w-full lg:w-[50%]'>
                 <Carousel setApi={setApi} className="w-full ">
                     <CarouselContent>
                         {images.map((image, index) => (
@@ -62,11 +62,11 @@ export const GalleryWithThumbnails = (
                     <CarouselPrevious className='hidden lg:flex lg:justify-center lg:items-center' />
                 </Carousel>
             </div>
-            <div className='w-[50%] flex flex-col justify-center items-center'>
-                <div className='relative flex h-36 lg:h-24 items-end w-full lg:max-w-lg'>
+            <div className='w-full lg:w-[50%] flex flex-col justify-center items-center'>
+                <div className='relative flex h-24 lg:h-24 items-end w-full lg:max-w-lg'>
                     <div className="absolute top-0 left-0 w-32 h-4 bg-gray-200"></div>
                     <div >
-                        <h2 className="text-4xl font-bold mt-8">{title}</h2>
+                        <h2 className="text-4xl font-bold mt-2 lg:mt-8">{title}</h2>
                         <span className="text-primary text-2xl block">{subtitle}</span>
                     </div>
                 </div>
