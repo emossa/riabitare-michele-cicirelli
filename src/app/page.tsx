@@ -35,7 +35,8 @@ const services = [
   {
     title: "Ristrutturazione chiavi in mano",
     description: "Trasformiamo la tua casa senza stress. Offriamo un servizio completo e personalizzato, dalla progettazione alla consegna.",
-    icon: <House size={70} className='text-primary' />
+    icon: <House size={70} className='text-primary' />,
+    url: '/ristrutturazione-chiavi-in-mano'
   },
   {
     title: "Rifacimento del bagno",
@@ -46,7 +47,8 @@ const services = [
   {
     title: "Tinteggiatura",
     description: "Offriamo tinteggiature professionali per interni ed esterni, garantendo precisione, utilizzo di vernici di qualità e finiture personalizzate.",
-    icon: <PaintRoller size={70} className='text-primary' />
+    icon: <PaintRoller size={70} className='text-primary' />,
+    url: '/tinteggiatura'
   }
 ]
 
