@@ -5,7 +5,8 @@ import { Servizi } from "@/components/ui/servizi";
 import { Reviews } from "@/components/ui/reviews";
 import Image from "next/image";
 import { CtaFooter } from "@/components/ui/cta-footer";
-import { House, ShowerHead, HousePlug, ThermometerSun } from "lucide-react";
+import { House, ShowerHead, HousePlug, ThermometerSun, PaintRoller } from "lucide-react";
+import { url } from "inspector";
 
 const images = [
   {
@@ -39,18 +40,14 @@ const services = [
   {
     title: "Rifacimento del bagno",
     description: "Rinnova il tuo spazio con stile. Offriamo design moderno, materiali di alta qualità e installazione professionale per un bagno funzionale e elegante.",
-    icon: <ShowerHead size={70} className='text-primary' />
+    icon: <ShowerHead size={70} className='text-primary' />,
+    url: '/rifacimento-bagni'
   },
   {
-    title: "Impianti elettrici",
-    description: "Sicurezza e efficienza. Installiamo nuovi sistemi con materiali certificati, migliorando la funzionalità e la conformità alle normative.",
-    icon: <HousePlug size={70} className='text-primary' />
-  },
-  {
-    title: "Impianti termici",
-    description: "Comfort e risparmio energetico. Installiamo sistemi efficienti e moderni per garantire calore omogeneo e riduzione dei consumi.",
-    icon: <ThermometerSun size={70} className='text-primary' />
-  },
+    title: "Tinteggiatura",
+    description: "Offriamo tinteggiature professionali per interni ed esterni, garantendo precisione, utilizzo di vernici di qualità e finiture personalizzate.",
+    icon: <PaintRoller size={70} className='text-primary' />
+  }
 ]
 
 export default function Home() {

@@ -16,7 +16,7 @@ export const Servizi = ({ services }: {
                 <span className="text-primary text-4xl font-bold mx-4">Servizi</span>
                 <div className="h-[1px] bg-primary w-full lg:max-w-[30%]"></div>
             </div>
-            <div className="flex flex-col lg:flex-row justify-between mt-14 px-10 items-center lg:items-start flex-wrap">
+            <div className="flex flex-col lg:flex-row justify-center gap-10 mt-14 px-10 items-center lg:items-start flex-wrap">
                 {services.map((service, index) => (
                     <div key={index} className="flex flex-col items-center max-w-[350px] border px-10 py-5 shadow-xl min-h-[400px] mt-5">
                         {service.icon}
