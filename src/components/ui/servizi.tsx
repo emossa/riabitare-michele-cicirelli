@@ -1,6 +1,14 @@
-import { House, HousePlug, ShowerHead, ThermometerSun } from 'lucide-react'
-import Image from 'next/image'
-export const Servizi = () => {
+import Link from "next/link"
+
+export const Servizi = ({ services }: {
+    services: {
+        title: string,
+        description: string,
+        icon: React.ReactNode,
+        url?: string,
+    }[]
+}) => {
+
     return (
         <>
             <div className="flex w-full items-center justify-center gap-10 lg:gap-20 mt-24">
@@ -9,47 +17,24 @@ export const Servizi = () => {
                 <div className="h-[1px] bg-primary w-full lg:max-w-[30%]"></div>
             </div>
             <div className="flex flex-col lg:flex-row justify-between mt-14 px-10 items-center lg:items-start flex-wrap">
-                <div className="flex flex-col items-center max-w-[350px] border px-10 py-5 shadow-xl min-h-[400px] mt-5">
-                    <House size={70} className='text-primary' />
-                    <div>
-                        <p className="text-2xl font-bold mt-8">Ristrutturazione chiavi in mano</p>
-                        <p className="text-lg">
-                            {"Trasformiamo la tua casa senza stress. Offriamo un servizio completo e personalizzato, dalla progettazione alla consegna."}
-                        </p>
+                {services.map((service, index) => (
+                    <div key={index} className="flex flex-col items-center max-w-[350px] border px-10 py-5 shadow-xl min-h-[400px] mt-5">
+                        {service.icon}
+                        <div>
+                            <p className="text-2xl font-bold mt-8">{service.title}</p>
+                            <p className="text-lg">
+                                {service.description}
+                            </p>
+                        </div>
+                        {
+                            service.url && (
+                                <Link href={service.url} >
+                                    <button className="bg-primary text-white px-4 py-2 mt-4">Scopri di più</button>
+                                </Link>
+                            )
+                        }
                     </div>
-                    <button className="bg-primary text-white px-4 py-2 mt-4">Scopri di più</button>
-                </div>
-                <div className="flex flex-col items-center max-w-[350px] border px-10 py-5 shadow-xl min-h-[400px] mt-5">
-                    <ShowerHead size={70} className='text-primary' />
-                    <div>
-                        <p className="text-2xl font-bold mt-8" >Rifacimento del bagno</p>
-                        <p className="text-lg">
-                            {"Rinnova il tuo spazio con stile. Offriamo design moderno, materiali di alta qualità e installazione professionale per un bagno funzionale e elegante."}
-                        </p>
-                    </div>
-                    <button className="bg-primary text-white px-4 py-2 mt-4">Scopri di più</button>
-                </div>
-                <div className="flex flex-col items-center max-w-[350px] border px-10 py-5 shadow-xl min-h-[400px] mt-5">
-                    <HousePlug size={70} className='text-primary' />
-                    <div>
-                        <p className="text-2xl font-bold mt-8">Impianti elettrici</p>
-                        <p className="text-lg">
-                            {"Sicurezza e efficienza. Installiamo nuovi sistemi con materiali certificati, migliorando la funzionalità e la conformità alle normative."}
-                        </p>
-                    </div>
-                    <button className="bg-primary text-white px-4 py-2 mt-4">Scopri di più</button>
-                </div>
-                <div className="flex flex-col items-center max-w-[350px] border px-10 py-5 shadow-xl min-h-[400px] mt-5">
-                    <ThermometerSun size={70} className='text-primary' />
-                    <div>
-                        <p className="text-2xl font-bold mt-8">Impianti termici</p>
-                        <p className="text-lg">
-                            {"Comfort e risparmio energetico. Installiamo sistemi efficienti e moderni per garantire calore omogeneo e riduzione dei consumi."}
-                        </p>
-                    </div>
-                    <button className="bg-primary text-white px-4 py-2 mt-4">Scopri di più</button>
-                </div>
-
+                ))}
             </div>
         </>
     )

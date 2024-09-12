@@ -5,6 +5,7 @@ import { Servizi } from "@/components/ui/servizi";
 import { Reviews } from "@/components/ui/reviews";
 import Image from "next/image";
 import { CtaFooter } from "@/components/ui/cta-footer";
+import { House, ShowerHead, HousePlug, ThermometerSun } from "lucide-react";
 
 const images = [
   {
@@ -29,6 +30,29 @@ const images = [
   }
 ]
 
+const services = [
+  {
+    title: "Ristrutturazione chiavi in mano",
+    description: "Trasformiamo la tua casa senza stress. Offriamo un servizio completo e personalizzato, dalla progettazione alla consegna.",
+    icon: <House size={70} className='text-primary' />
+  },
+  {
+    title: "Rifacimento del bagno",
+    description: "Rinnova il tuo spazio con stile. Offriamo design moderno, materiali di alta qualità e installazione professionale per un bagno funzionale e elegante.",
+    icon: <ShowerHead size={70} className='text-primary' />
+  },
+  {
+    title: "Impianti elettrici",
+    description: "Sicurezza e efficienza. Installiamo nuovi sistemi con materiali certificati, migliorando la funzionalità e la conformità alle normative.",
+    icon: <HousePlug size={70} className='text-primary' />
+  },
+  {
+    title: "Impianti termici",
+    description: "Comfort e risparmio energetico. Installiamo sistemi efficienti e moderni per garantire calore omogeneo e riduzione dei consumi.",
+    icon: <ThermometerSun size={70} className='text-primary' />
+  },
+]
+
 export default function Home() {
   return (
     <main className="">
@@ -49,9 +73,9 @@ export default function Home() {
               risanamenti strutturali e riqualificazioni energetiche.`}
         />
         <Gallery images={images} />
-        <Servizi />
+        <Servizi services={services} />
         <Reviews />
-        <CtaFooter />
+        <CtaFooter img="/hero.webp" />
       </div>
     </main>
   );
