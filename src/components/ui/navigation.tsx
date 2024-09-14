@@ -10,9 +10,9 @@ import {
     navigationMenuTriggerStyle,
 } from "./navigation-menu"
 import { ListItem } from "./list-item";
-import { Drawer, DrawerContent, DrawerTrigger } from "./drawer";
+import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerHeader, DrawerTitle, DrawerTrigger } from "./drawer";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@radix-ui/react-accordion";
-import { MenuIcon } from "lucide-react";
+import { MenuIcon, X } from "lucide-react";
 import Image from "next/image";
 
 export const DesktopNavigation = () => {
@@ -86,13 +86,22 @@ export const DesktopNavigation = () => {
 }
 
 export const MobileNavigation = () => {
+    const [open, setOpen] = React.useState(false)
+    const onClick = () => {
+        setOpen(!open)
+    }
     return (
         <>
-            <Drawer direction="left">
-                <DrawerTrigger>
-                    <MenuIcon className="w-6 h-6" />
-                </DrawerTrigger>
+            <Drawer direction="left" open={open}>
+                <MenuIcon className="w-6 h-6" onClick={onClick} />
                 <DrawerContent className="">
+                    <DrawerHeader className="flex justify-between">
+                        <DrawerTitle>Menu</DrawerTitle>
+                        <DrawerClose>
+                            <X className="w-6 h-6" />
+                        </DrawerClose>
+                    </DrawerHeader>
+
                     <NavigationMenu className="w-full">
                         <NavigationMenuList className="flex-col items-start">
                             <NavigationMenuItem className="ml-[4px]">
@@ -112,18 +121,21 @@ export const MobileNavigation = () => {
                                         </AccordionTrigger>
                                         <AccordionContent>
                                             <ul className="grid w-full gap-3 p-4">
-                                                <ListItem title="Ristrutturazione chiavi in mano">
-                                                    Ristrutturiamo la tua casa in modo completo.
-                                                </ListItem>
-                                                <ListItem title="Ristrutturazione bagno">
-                                                    Ristrutturiamo il tuo bagno in modo completo.
-                                                </ListItem>
-                                                <ListItem title="Impianti elettrici">
-                                                    Progettiamo e realizziamo impianti elettrici per la tua casa.
-                                                </ListItem>
-                                                <ListItem title="Impianti termici">
-                                                    Progettiamo e realizziamo impianti termici ad alta efficienza.
-                                                </ListItem>
+                                                <Link href={'/ristrutturazione-chiavi-in-mano'} passHref onClick={onClick}>
+                                                    <ListItem title="Ristrutturazione chiavi in mano">
+                                                        Ristrutturiamo la tua casa in modo completo.
+                                                    </ListItem>
+                                                </Link>
+                                                <Link href={'/rifacimento-bagni'} passHref onClick={onClick}>
+                                                    <ListItem title="Ristrutturazione bagno">
+                                                        Ristrutturiamo il tuo bagno in modo completo.
+                                                    </ListItem>
+                                                </Link>
+                                                <Link href={'/tinteggiatura'} passHref onClick={onClick}>
+                                                    <ListItem title="Tinteggiatura e controsoffitti">
+                                                        Tinteggiatura e controsoffitti per la tua casa.
+                                                    </ListItem>
+                                                </Link>
                                             </ul>
                                         </AccordionContent>
                                     </AccordionItem>
