@@ -39,20 +39,21 @@ export const DesktopNavigation = () => {
                             <NavigationMenuTrigger>Servizi</NavigationMenuTrigger>
                             <NavigationMenuContent className="">
                                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                                    <ListItem title="Ristrutturazione chiavi in mano">
-                                        Ristrutturiamo la tua casa in modo completo.
-                                    </ListItem>
-                                    <Link href="/rifacimento-bagni" passHref>
+                                    <Link href={'/ristrutturazione-chiavi-in-mano'} passHref>
+                                        <ListItem title="Ristrutturazione chiavi in mano">
+                                            Ristrutturiamo la tua casa in modo completo.
+                                        </ListItem>
+                                    </Link>
+                                    <Link href={'/rifacimento-bagni'} passHref>
                                         <ListItem title="Ristrutturazione bagno">
                                             Ristrutturiamo il tuo bagno in modo completo.
                                         </ListItem>
                                     </Link>
-                                    <ListItem title="Impianti elettrici">
-                                        Progettiamo e realizziamo impianti elettrici per la tua casa.
-                                    </ListItem>
-                                    <ListItem title="Impianti termici">
-                                        Progettiamo e realizziamo impianti termici ad alta efficienza.
-                                    </ListItem>
+                                    <Link href={'/tinteggiatura'} passHref>
+                                        <ListItem title="Tinteggiatura e controsoffitti">
+                                            Tinteggiatura e controsoffitti per la tua casa.
+                                        </ListItem>
+                                    </Link>
                                 </ul>
                             </NavigationMenuContent>
                         </NavigationMenuItem>
