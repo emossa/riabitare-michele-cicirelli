@@ -4,42 +4,42 @@ import { Servizi } from "@/components/ui/servizi";
 import { Reviews } from "@/components/ui/reviews";
 import { CtaFooter } from "@/components/ui/cta-footer";
 import { GalleryWithThumbnails } from "@/components/ui/galleryWithThumbnails";
-import { House, ShowerHead, HousePlug, ThermometerSun, WandSparkles, Recycle, Droplets, LayoutDashboard } from "lucide-react";
+import { House, ShowerHead, HousePlug, ThermometerSun, WandSparkles, Recycle, Droplets, LayoutDashboard, PaintRoller, PencilRuler, SquareMousePointer } from "lucide-react";
 
 const images = [
-    { src: "/galleria-bagno/galleria-servizio-bagno1.jpg", alt: "Bagno", description: "Bagno" },
-    { src: "/galleria-bagno/galleria-servizio-bagno2.jpg", alt: "Bagno", description: "Bagno" },
-    { src: "/galleria-bagno/galleria-servizio-bagno5.jpg", alt: "Bagno", description: "Bagno" },
-    { src: "/galleria-bagno/galleria-servizio-bagno6.jpg", alt: "Bagno", description: "Bagno" },
-    { src: "/galleria-bagno/galleria-servizio-bagno7.jpg", alt: "Bagno", description: "Bagno" },
-    { src: "/galleria-bagno/galleria-servizio-bagno8.jpg", alt: "Bagno", description: "Bagno" },
-    { src: "/galleria-bagno/galleria-servizio-bagno9.jpg", alt: "Bagno", description: "Bagno" },
-    { src: "/galleria-bagno/galleria-servizio-bagno10.jpg", alt: "Bagno", description: "Bagno" },
-    { src: "/galleria-bagno/galleria-servizio-bagno11.jpg", alt: "Bagno", description: "Bagno" },
-    { src: "/galleria-bagno/galleria-servizio-bagno12.jpg", alt: "Bagno", description: "Bagno" },
-    { src: "/galleria-bagno/galleria-servizio-bagno13.jpg", alt: "Bagno", description: "Bagno" },
+    { src: "/galleria-tint/tinteggiatura7.webp", alt: "Tinteggiatura e Controsoffitti", description: "Tinteggiatura e Controsoffitti" },
+    { src: "/galleria-tint/tinteggiatura5.webp", alt: "Tinteggiatura e Controsoffitti", description: "Tinteggiatura e Controsoffitti" },
+    { src: "/galleria-tint/tinteggiatura6.webp", alt: "Tinteggiatura e Controsoffitti", description: "Tinteggiatura e Controsoffitti" },
+    { src: "/galleria-tint/tinteggiatura8.webp", alt: "Tinteggiatura e Controsoffitti", description: "Tinteggiatura e Controsoffitti" },
+    { src: "/galleria-tint/tinteggiatura9.webp", alt: "Tinteggiatura e Controsoffitti", description: "Tinteggiatura e Controsoffitti" },
+    { src: "/galleria-tint/tinteggiatura10.webp", alt: "Tinteggiatura e Controsoffitti", description: "Tinteggiatura e Controsoffitti" },
+    { src: "/galleria-tint/tinteggiatura1.webp", alt: "Tinteggiatura e Controsoffitti", description: "Tinteggiatura e Controsoffitti" },
+    { src: "/galleria-tint/tinteggiatura2.webp", alt: "Tinteggiatura e Controsoffitti", description: "Tinteggiatura e Controsoffitti" },
+    { src: "/galleria-tint/tinteggiatura3.webp", alt: "Tinteggiatura e Controsoffitti", description: "Tinteggiatura e Controsoffitti" },
+    { src: "/galleria-tint/tinteggiatura4.webp", alt: "Tinteggiatura e Controsoffitti", description: "Tinteggiatura e Controsoffitti" },
+
 ]
 
 const services = [
     {
-        title: "Ristrutturazione completa",
-        description: "Include la sostituzione di tutti gli elementi del bagno, come sanitari, piastrelle, pavimenti, impianti idraulici, e impianti elettrici. Solitamente implica un rifacimento totale dell’ambiente.",
-        icon: <Recycle size={70} className='text-primary' />
+        title: "Tinteggiatura interni ed esterni",
+        description: "Verniciature professionali per abitazioni, uffici e locali commerciali, con una vasta gamma di colori e finiture per adattarsi a ogni ambiente.",
+        icon: <PaintRoller size={70} className='text-primary' />
     },
     {
-        title: "Sostituzione dei sanitari",
-        description: "Prevede il cambio di lavabo, wc, bidet e doccia o vasca. Questo tipo di intervento è meno invasivo e può migliorare estetica e funzionalità senza alterare l’intero bagno.",
+        title: "Rasatura e preparazione pareti",
+        description: "Interventi di rasatura, stuccatura e preparazione delle superfici per garantire una tinteggiatura uniforme e duratura.",
+        icon: <SquareMousePointer size={70} className='text-primary' />
+    },
+    {
+        title: "Controsoffitti in cartongesso",
+        description: "Realizzazione di controsoffitti in cartongesso per migliorare l’isolamento, nascondere impianti o creare giochi di luci e forme.",
+        icon: <PencilRuler size={70} className='text-primary' />
+    },
+    {
+        title: "Controsoffitti isolanti",
+        description: " Installazione di controsoffitti con materiali isolanti per migliorare l’acustica e l’efficienza energetica degli ambienti, combinando funzionalità ed estetica.",
         icon: <Droplets size={70} className='text-primary' />
-    },
-    {
-        title: "Rifacimento della doccia o vasca",
-        description: "Concentrato sull'area doccia o vasca, questo intervento può includere la sostituzione del box doccia, la trasformazione della vasca in doccia o l’aggiunta di una cabina doccia moderna.",
-        icon: <ShowerHead size={70} className='text-primary' />
-    },
-    {
-        title: "Rifacimento pavimenti e rivestimenti",
-        description: "Consiste nel rinnovare solo piastrelle e pavimenti per dare un aspetto nuovo al bagno. Questo intervento può includere l'impermeabilizzazione delle superfici.",
-        icon: <LayoutDashboard size={70} className='text-primary' />
     },
 ]
 
@@ -47,20 +47,20 @@ export default function RifacimentoBagno() {
     return (
         <main className="">
             <Hero
-                src="/bagno-g.webp"
-                title="Rifacimento Bagno"
-                subtitle="Ristrutturiamo il tuo bagno in modo completo."
+                src="/hero2-ristr.webp"
+                title="Tinteggiatura e controsoffitti"
+                subtitle="Offriamo tinteggiature professionali per interni ed esterni, garantendo precisione, utilizzo di vernici di qualità e finiture personalizzate."
             />
             <div className="lg:px-24">
                 <Description
-                    title="Rifacimento Bagno"
-                    subtitle="Ristrutturiamo il tuo bagno in modo completo."
-                    firstText="l servizio di rifacimento del bagno offerto da Riabitare Ristrutturazioni inizia con una consulenza personalizzata. Un tecnico effettua un sopralluogo per valutare lo stato attuale del bagno e discutere con il cliente le esigenze e i desideri. Successivamente, viene sviluppato un progetto su misura che include il nuovo layout, la scelta dei materiali, i sanitari e i rivestimenti. Viene poi fornito un preventivo dettagliato con i costi e i tempi di realizzazione."
-                    secondText="Una volta approvato il progetto, Riabitare Ristrutturazioni passa alla fase operativa: demolizione del vecchio bagno, installazione degli impianti idraulici ed elettrici, posa dei nuovi rivestimenti e installazione di sanitari e arredi scelti. L'impresa assicura un lavoro a regola d'arte, rispettando i tempi concordati. Alla fine, viene effettuata una pulizia approfondita e il bagno viene consegnato pronto all'uso, garantendo qualità e durabilità."
+                    title="Tinteggiatura e controsoffitti"
+                    subtitle="Rinnova il tuo spazio con stile"
+                    firstText="Il nostro servizio di tinteggiatura garantisce pareti perfettamente rifinite grazie all'uso di vernici di alta qualità e tecniche professionali. Ci occupiamo della preparazione delle superfici, con rasature e stuccature che assicurano un risultato uniforme e duraturo. Offriamo inoltre una vasta gamma di colori e finiture per adattarci a qualsiasi esigenza estetica."
+                    secondText="Realizziamo strutture in cartongesso o materiali specifici, ideali per migliorare l’isolamento acustico e termico, nascondere impianti e creare effetti di design. L'installazione è curata nei minimi dettagli, con soluzioni personalizzate che coniugano estetica e funzionalità."
                 />
-                <GalleryWithThumbnails images={images} title="I nostri lavori" subtitle="Rivoluzioniamo il tuo bagno" description="Riabitare Ristrutturazioni utilizza materiali di alta qualità, garantendo durabilità ed estetica raffinata. Il design è moderno e funzionale, con attenzione ai dettagli e soluzioni innovative. I rivestimenti, i sanitari e gli arredi sono selezionati da brand prestigiosi, assicurando eleganza e resistenza nel tempo." />
+                <GalleryWithThumbnails images={images} title="I nostri lavori" subtitle="Tinteggiature e controsoffitti professionali" description="La qualità del nostro servizio di tinteggiatura e controsoffitto si basa su precisione, materiali di pregio e attenzione ai dettagli. Offriamo finiture impeccabili, con colori resistenti e soluzioni personalizzate. I controsoffitti sono realizzati per garantire estetica, isolamento e durata nel tempo, utilizzando tecniche avanzate e un’installazione accurata per risultati professionali." />
                 <Servizi services={services} />
-                <CtaFooter img="/galleria-bagno/galleria-servizio-bagno2.jpg" />
+                <CtaFooter img="/galleria-tint/tinteggiatura3.webp" />
             </div>
         </main>
     );
