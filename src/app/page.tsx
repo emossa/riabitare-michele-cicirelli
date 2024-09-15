@@ -45,7 +45,7 @@ const services = [
     url: '/rifacimento-bagni'
   },
   {
-    title: "Tinteggiatura",
+    title: "Tinteggiatura e controsoffitti",
     description: "Offriamo tinteggiature professionali per interni ed esterni, garantendo precisione, utilizzo di vernici di qualità e finiture personalizzate.",
     icon: <PaintRoller size={70} className='text-primary' />,
     url: '/tinteggiatura'
