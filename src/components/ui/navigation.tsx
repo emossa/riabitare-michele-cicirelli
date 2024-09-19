@@ -57,27 +57,21 @@ export const DesktopNavigation = () => {
                                 </ul>
                             </NavigationMenuContent>
                         </NavigationMenuItem>
-                        <NavigationMenuItem>
+                        {/* <NavigationMenuItem>
                             <Link href="/contatti" legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                     Casi di successo
                                 </NavigationMenuLink>
                             </Link>
-                        </NavigationMenuItem>
+                        </NavigationMenuItem> */}
                         <NavigationMenuItem>
-                            <Link href="/progettazione" legacyBehavior passHref>
+                            <Link href="/come-funziona" legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                    Progettazione
+                                    Come funziona
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
-                        <NavigationMenuItem>
-                            <Link href="/contatti" legacyBehavior passHref>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                    Contatti
-                                </NavigationMenuLink>
-                            </Link>
-                        </NavigationMenuItem>
+
                     </NavigationMenuList>
                 </NavigationMenu>
             </div>
@@ -142,17 +136,17 @@ export const MobileNavigation = () => {
                                     </AccordionItem>
                                 </Accordion>
                             </NavigationMenuItem>
-                            <NavigationMenuItem>
+                            {/* <NavigationMenuItem>
                                 <Link href="/contatti" legacyBehavior passHref>
                                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                         Casi di successo
                                     </NavigationMenuLink>
                                 </Link>
-                            </NavigationMenuItem>
+                            </NavigationMenuItem> */}
                             <NavigationMenuItem>
-                                <Link href="/progettazione" legacyBehavior passHref>
+                                <Link href="/come-funziona" legacyBehavior passHref>
                                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                        Progettazione
+                                        Come funziona
                                     </NavigationMenuLink>
                                 </Link>
                             </NavigationMenuItem>

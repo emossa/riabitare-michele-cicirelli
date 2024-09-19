@@ -63,14 +63,14 @@ export const GalleryWithThumbnails = (
                 </Carousel>
             </div>
             <div className='w-full lg:w-[50%] flex flex-col justify-center items-center'>
-                <div className='relative flex h-24 lg:h-24 items-end w-full lg:max-w-lg'>
-                    <div className="absolute top-0 left-0 w-32 h-4 bg-gray-200"></div>
+                <div className='w-full max-w-lg'>
+                    <div className="w-32 h-4 bg-gray-200"></div>
                     <div >
-                        <h2 className="text-4xl font-bold mt-2 lg:mt-8">{title}</h2>
+                        <h2 className="text-4xl font-bold mt-2 lg:mt-4">{title}</h2>
                         <span className="text-primary text-2xl block">{subtitle}</span>
                     </div>
                 </div>
-                <p className='mt-5 lg:max-w-lg'>{description}</p>
+                <p className='mt-5 w-full max-w-lg'>{description}</p>
 
             </div>
         </div>
