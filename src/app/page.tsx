@@ -64,12 +64,8 @@ export default function Home() {
         <Description
           title="Riabitare Ristrutturazioni"
           subtitle="di Michele Cicirelli"
-          firstText={`Ristrutturazioni Bari S.r.l. è un'azienda leader nel settore delle ristrutturazioni
-             e del restauro edilizio nella provincia di Bari. Con oltre 20 anni di esperienza, la nostra
-              impresa si distingue per l'attenzione ai dettagli.`}
-          secondText={`Offriamo una gamma completa di servizi che spaziano dalla progettazione e
-             consulenza iniziale alla realizzazione chiavi in mano di ristrutturazioni di interni ed esterni,
-              risanamenti strutturali e riqualificazioni energetiche.`}
+          firstText={`Riabitare Ristrutturazioni è un' azienda con oltre 20 anni di esperienza nel settore delle ristrutturazioni chiavi in mano di abitazioni, bagni, attività commerciali ed esterni. La nostra impresa si distingue per il rapporto di fiducia con la clientela e per le ristrutturazioni di pregio con l’ attenzione ai dettagli e l’ utilizzo di materiali e finiture di qualità.`}
+          secondText={`Inoltre, mette a disposizione dei suoi clienti, personale qualificato e tecnici a supporto di tutto il processo: dai sopralluoghi preliminari, alla fase di preventivazione dei lavori, alla progettazione e scelta dei materiali, al disbrigo delle pratiche edilizie, alla realizzazione del progetto di ristrutturazione, pagamenti personalizzati ed assistenza pre, durante e post lavori.`}
         />
         <Gallery images={images} />
         <Servizi services={services} />
