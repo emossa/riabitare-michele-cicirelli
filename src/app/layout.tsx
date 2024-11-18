@@ -5,6 +5,7 @@ import { Navbar } from "@/components/ui/navbar";
 import { cn } from "@/lib/utils";
 import ChatWidget from "@/components/ui/chat-widget";
 import { Footer } from "@/components/ui/footer";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans", });
 
@@ -32,6 +33,7 @@ export default function RootLayout({
           <Footer />
         </footer>
         <ChatWidget />
+        <GoogleAnalytics trackPageViews />
       </body>
     </html>
   );

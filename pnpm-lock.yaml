@@ -32,6 +32,9 @@ dependencies:
   next:
     specifier: 14.2.5
     version: 14.2.5(react-dom@18.3.1)(react@18.3.1)
+  nextjs-google-analytics:
+    specifier: ^2.3.7
+    version: 2.3.7(next@14.2.5)(react@18.3.1)
   react:
     specifier: ^18
     version: 18.3.1
@@ -2455,6 +2458,18 @@ packages:
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
+    dev: false
+
+  /nextjs-google-analytics@2.3.7(next@14.2.5)(react@18.3.1):
+    resolution: {integrity: sha512-kuE5OcqmAg1qh9J6LskoDLybj8WmLyfxD+KsVGGvRe5zZg6bGQ/QM/1/7TdJq/u7hIeVqFqcloadD0pcosRXUw==}
+    peerDependencies:
+      next: '>=11.0.0'
+      react: '>=17.0.0'
+    dependencies:
+      next: 14.2.5(react-dom@18.3.1)(react@18.3.1)
+      react: 18.3.1
+    optionalDependencies:
+      fsevents: 2.3.3
     dev: false
 
   /normalize-path@3.0.0:
