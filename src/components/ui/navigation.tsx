@@ -87,6 +87,11 @@ export const MobileNavigation = () => {
     }
     return (
         <>
+            <div className="flex items-center">
+                <Link href="/">
+                    <Image src="/logo.png" width={100} height={69} alt="" />
+                </Link>
+            </div>
             <Drawer direction="left" open={open}>
                 <MenuIcon className="w-6 h-6" onClick={onClick} />
                 <DrawerContent className="">
@@ -143,17 +148,10 @@ export const MobileNavigation = () => {
                                     </NavigationMenuLink>
                                 </Link>
                             </NavigationMenuItem> */}
-                            <NavigationMenuItem>
-                                <Link href="/come-funziona" legacyBehavior passHref>
+                            <NavigationMenuItem onClick={onClick}>
+                                <Link href="/come-funziona" legacyBehavior passHref >
                                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                         Come funziona
-                                    </NavigationMenuLink>
-                                </Link>
-                            </NavigationMenuItem>
-                            <NavigationMenuItem>
-                                <Link href="/contatti" legacyBehavior passHref>
-                                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                        Contatti
                                     </NavigationMenuLink>
                                 </Link>
                             </NavigationMenuItem>
@@ -161,11 +159,6 @@ export const MobileNavigation = () => {
                     </NavigationMenu>
                 </DrawerContent>
             </Drawer>
-            <div className="flex items-center">
-                <Link href="/">
-                    <Image src="/logo.png" width={100} height={69} alt="" />
-                </Link>
-            </div>
         </>
     )
 }

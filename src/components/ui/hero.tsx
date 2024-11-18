@@ -9,7 +9,7 @@ export const Hero = ({ src, title, subtitle }: { src: string, title?: string, su
                 <div className="absolute inset-0 bg-black opacity-50" />
 
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-white text-center">
+                    <div className="text-white text-center px-10">
                         <h1 className="text-4xl font-bold">{title}</h1>
                         <p className="text-lg">{subtitle}</p>
                         <button className="bg-primary text-white px-4 py-2 mt-4">Richiedi un preventivo</button>
