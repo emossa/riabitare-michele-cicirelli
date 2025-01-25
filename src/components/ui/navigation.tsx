@@ -17,7 +17,7 @@ import Image from "next/image";
 
 export const DesktopNavigation = () => {
     return (
-        <div className="px-24 w-full flex justify-between">
+        <div className="px-24 w-full hidden justify-between lg:flex">
             <div className="flex items-center">
                 <Link href="/">
                     <span className="text-4xl font-bold">
@@ -93,13 +93,13 @@ export const MobileNavigation = () => {
     }
     return (
         <>
-            <div className="flex items-center">
+            <div className="flex items-center lg:hidden">
                 <Link href="/">
                     <Image src="/logo.png" width={100} height={69} alt="" />
                 </Link>
             </div>
             <Drawer direction="left" open={open} onOpenChange={setOpen}>
-                <MenuIcon className="w-6 h-6" onClick={onClick} />
+                <MenuIcon className="w-6 h-6 lg:hidden" onClick={onClick} />
                 <DrawerContent className="">
                     <DrawerHeader className="flex justify-between">
                         <DrawerTitle>Menu</DrawerTitle>
@@ -112,7 +112,7 @@ export const MobileNavigation = () => {
                         <NavigationMenuList className="flex-col items-start">
                             <NavigationMenuItem className="ml-[4px]">
                                 <Link href="/" legacyBehavior passHref>
-                                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                    <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={onClick}>
                                         Home
                                     </NavigationMenuLink>
                                 </Link>
@@ -161,7 +161,7 @@ export const MobileNavigation = () => {
                                     </NavigationMenuLink>
                                 </Link>
                             </NavigationMenuItem>
-                            <NavigationMenuItem>
+                            <NavigationMenuItem onClick={onClick}>
                                 <Link href="/richiedi-preventivo" legacyBehavior passHref>
                                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                         Contatti

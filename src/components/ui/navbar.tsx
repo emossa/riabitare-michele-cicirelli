@@ -6,15 +6,6 @@ import { useMediaQuery } from 'usehooks-ts'
 import { DesktopNavigation, MobileNavigation } from "@/components/ui/navigation"
 
 export const Navbar = () => {
-    const isDesktop = useMediaQuery("(min-width: 1024px)");
-    const [navBar, setNavBar] = useState(<DesktopNavigation />);
-    useEffect(() => {
-        if (isDesktop) {
-            setNavBar(<DesktopNavigation />);
-        } else {
-            setNavBar(<MobileNavigation />);
-        }
-    }, [isDesktop]);
     return (
         <div className="
             flex
@@ -22,7 +13,8 @@ export const Navbar = () => {
             justify-between
             p-4
         ">
-            {navBar}
+            <DesktopNavigation />
+            <MobileNavigation />
         </div>
     );
 }
