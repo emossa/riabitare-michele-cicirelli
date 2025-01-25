@@ -12,7 +12,7 @@ import {
 import { ListItem } from "./list-item";
 import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerHeader, DrawerTitle, DrawerTrigger } from "./drawer";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@radix-ui/react-accordion";
-import { MenuIcon, X } from "lucide-react";
+import { ChevronDown, MenuIcon, X } from "lucide-react";
 import Image from "next/image";
 
 export const DesktopNavigation = () => {
@@ -121,8 +121,8 @@ export const MobileNavigation = () => {
                                 <Accordion type="single" collapsible className="w-full">
                                     <AccordionItem value="servizi" className="w-full border-0 pr-4">
                                         <AccordionTrigger className="p-0 hover:no-underline">
-                                            <NavigationMenuLink className={navigationMenuTriggerStyle()} >
-                                                Servizi
+                                            <NavigationMenuLink className={navigationMenuTriggerStyle() + " flex items-center gap-2"} >
+                                                <span>Servizi</span> <ChevronDown className="ml-2 h-5 w-5 transition duration-200 group-data-[state=open]:rotate-180" />
                                             </NavigationMenuLink>
                                         </AccordionTrigger>
                                         <AccordionContent>
