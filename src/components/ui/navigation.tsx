@@ -161,6 +161,13 @@ export const MobileNavigation = () => {
                                     </NavigationMenuLink>
                                 </Link>
                             </NavigationMenuItem>
+                            <NavigationMenuItem>
+                                <Link href="/richiedi-preventivo" legacyBehavior passHref>
+                                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                        Contatti
+                                    </NavigationMenuLink>
+                                </Link>
+                            </NavigationMenuItem>
                         </NavigationMenuList>
                     </NavigationMenu>
                 </DrawerContent>
