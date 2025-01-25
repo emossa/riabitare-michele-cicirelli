@@ -20,8 +20,8 @@ export const Gallery = (
             <Carousel className="w-full mt-10 px-10">
                 <CarouselContent>
                     {images.map((image, index) => (
-                        <CarouselItem key={index} className="basis-9/12 lg:basis-1/4">
-                            <ImagePopup src={image.src} description={image.description} alt={image.alt} width={320} height={180} />
+                        <CarouselItem key={index} className="basis-9/12 lg:basis-1/4 ">
+                            <ImagePopup className=' rounded-md' src={image.src} description={image.description} alt={image.alt} width={320} height={180} />
                         </CarouselItem>
                     ))}
                 </CarouselContent>

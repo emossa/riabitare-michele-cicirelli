@@ -40,8 +40,8 @@ export const Reviews = () => {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselNext className='hidden lg:block' />
-                <CarouselPrevious className='hidden lg:block' />
+                <CarouselNext className='hidden lg:flex justify-center items-center' />
+                <CarouselPrevious className='hidden lg:flex justify-center items-center' />
             </Carousel>
         </>
     )

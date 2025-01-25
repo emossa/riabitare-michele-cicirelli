@@ -2,7 +2,7 @@ export const ReviewCard = (
     { name, review }: { name: string, review: string }
 ) => {
     return (
-        <div className="h-full bg-secondary p-8 text-center ">
+        <div className="h-full bg-secondary p-8 text-center  rounded-md">
             <p className="font-bold uppercase">{name}</p>
             <p className="text-xl font-light italic text-primary">{review}</p>
             <div className="flex items-center justify-center space-x-2 mt-4">

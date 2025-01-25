@@ -7,6 +7,7 @@ import Image from "next/image";
 import { CtaFooter } from "@/components/ui/cta-footer";
 import { House, ShowerHead, HousePlug, ThermometerSun, PaintRoller } from "lucide-react";
 import { url } from "inspector";
+import { UltimiLavori } from "@/components/ui/ultimi-lavori";
 
 const images = [
   {
@@ -35,19 +36,19 @@ const services = [
   {
     title: "Ristrutturazione chiavi in mano",
     description: "Trasformiamo la tua casa senza stress. Offriamo un servizio completo e personalizzato, dalla progettazione alla consegna.",
-    icon: <House size={70} className='text-primary' />,
+    icon: <House size={70} className='text-primary mx-auto' />,
     url: '/ristrutturazione-chiavi-in-mano'
   },
   {
     title: "Rifacimento del bagno",
     description: "Rinnova il tuo spazio con stile. Offriamo design moderno, materiali di alta qualità e installazione professionale per un bagno funzionale e elegante.",
-    icon: <ShowerHead size={70} className='text-primary' />,
+    icon: <ShowerHead size={70} className='text-primary mx-auto' />,
     url: '/rifacimento-bagni'
   },
   {
     title: "Tinteggiatura e controsoffitti",
     description: "Offriamo tinteggiature professionali per interni ed esterni, garantendo precisione e utilizzo di vernici di qualità.",
-    icon: <PaintRoller size={70} className='text-primary' />,
+    icon: <PaintRoller size={70} className='text-primary mx-auto' />,
     url: '/tinteggiatura'
   }
 ]
@@ -69,6 +70,7 @@ export default function Home() {
         />
         <Gallery images={images} />
         <Servizi services={services} />
+        <UltimiLavori />
         <Reviews />
         <CtaFooter img="/hero.webp" />
       </div>

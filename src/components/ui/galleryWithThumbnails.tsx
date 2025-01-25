@@ -15,7 +15,7 @@ import Image from 'next/image';
 
 
 export const GalleryWithThumbnails = (
-    { images, title, subtitle, description }: { images: { src: string, description: string, alt: string }[], title?: string, subtitle?: string, description?: string }
+    { images, title, subtitle, description, imgWidth = 1280, imgHeight = 920 }: { images: { src: string, description: string, alt: string }[], title?: string, subtitle?: string, description?: string, imgWidth?: number, imgHeight?: number }
 ) => {
     const [api, setApi] = React.useState<CarouselApi>()
     const [api2, setApi2] = React.useState<CarouselApi>()
@@ -42,7 +42,7 @@ export const GalleryWithThumbnails = (
                     <CarouselContent>
                         {images.map((image, index) => (
                             <CarouselItem key={index} className="w-full">
-                                <Image className='object-fill' src={image.src} alt={image.alt} width={1280} height={920} />
+                                <Image className='object-fill' src={image.src} alt={image.alt} width={imgWidth} height={imgHeight} />
                             </CarouselItem>
                         ))}
                     </CarouselContent>
@@ -54,7 +54,7 @@ export const GalleryWithThumbnails = (
                                 <Image onClick={() => {
                                     api?.scrollTo(index)
                                     api2?.scrollTo(index)
-                                }} src={image.src} alt={image.alt} width={192} height={108} />
+                                }} src={image.src} alt={image.alt} width={imgWidth / 10} height={imgHeight / 10} />
                             </CarouselItem>
                         ))}
                     </CarouselContent>

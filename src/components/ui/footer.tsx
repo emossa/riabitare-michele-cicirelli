@@ -2,7 +2,7 @@ import Image from 'next/image';
 export const Footer = () => {
     return (
         <>
-            <div className="w-full bg-primary text-white py-14 lg:mt-24 px-10">
+            <div className="w-full bg-primary text-white py-14 lg:pt-24 px-10">
                 <div className='flex w-full justify-center'>
                     <Image src="/logo-b.png" width={151} height={101} alt="" />
                 </div>

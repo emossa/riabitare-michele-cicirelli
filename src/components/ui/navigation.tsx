@@ -71,7 +71,13 @@ export const DesktopNavigation = () => {
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
-
+                        <NavigationMenuItem>
+                            <Link href="/richiedi-preventivo" legacyBehavior passHref>
+                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                    Contatti
+                                </NavigationMenuLink>
+                            </Link>
+                        </NavigationMenuItem>
                     </NavigationMenuList>
                 </NavigationMenu>
             </div>
@@ -92,7 +98,7 @@ export const MobileNavigation = () => {
                     <Image src="/logo.png" width={100} height={69} alt="" />
                 </Link>
             </div>
-            <Drawer direction="left" open={open}>
+            <Drawer direction="left" open={open} onOpenChange={setOpen}>
                 <MenuIcon className="w-6 h-6" onClick={onClick} />
                 <DrawerContent className="">
                     <DrawerHeader className="flex justify-between">

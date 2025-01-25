@@ -9,6 +9,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
+import Link from 'next/link'
 export const ImagePopup = ({ description, ...props }: ImageProps & { description?: string }) => {
     return (
         <>
@@ -25,7 +26,7 @@ export const ImagePopup = ({ description, ...props }: ImageProps & { description
                         {description}
                     </DialogDescription>}
                     <DialogFooter>
-                        <button className="bg-primary text-white px-4 py-2 mt-4">Richiedi un preventivo</button>
+                        <Link href={'/richiedi-preventivo'} className="bg-primary text-white px-4 py-2 mt-4 inline-block">Richiedi un preventivo</Link>
                     </DialogFooter>
                 </DialogContent>
             </Dialog>

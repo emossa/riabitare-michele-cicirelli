@@ -18,7 +18,7 @@ export const Servizi = ({ services }: {
             </div>
             <div className="flex flex-col lg:flex-row justify-center gap-10 mt-14 px-10 items-center lg:items-start flex-wrap">
                 {services.map((service, index) => (
-                    <div key={index} className="flex flex-col items-center max-w-[350px] border px-10 py-5 shadow-xl min-h-[400px] mt-5">
+                    <div key={index} className="flex flex-col max-w-[350px] border px-7 py-5 shadow-md min-h-[400px] mt-5  rounded-md">
                         {service.icon}
                         <div>
                             <p className="text-2xl font-bold mt-8">{service.title}</p>
@@ -29,7 +29,7 @@ export const Servizi = ({ services }: {
                         {
                             service.url && (
                                 <Link href={service.url} >
-                                    <button className="bg-primary text-white px-4 py-2 mt-4">Scopri di più</button>
+                                    <button className="bg-primary text-white px-4 py-2 mt-4  rounded-md">Scopri di più</button>
                                 </Link>
                             )
                         }
