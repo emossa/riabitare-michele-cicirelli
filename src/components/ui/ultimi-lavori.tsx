@@ -10,9 +10,15 @@ const lavori = [
     },
     {
         thumbnail: "/ultimi-lavori/planimetria-palmiotto.jpg",
-        title: "Ristrutturazione bagno",
+        title: "Ristrutturazione completa bagno",
         description: "Ristrutturazione bagno in Via Mentana, Toritto",
         url: "/ultimi-lavori/bagno-toritto"
+    },
+    {
+        thumbnail: "/ultimi-lavori/planimetria-3d-mastromatteo.png",
+        title: "Ristrutturazione locale commerciale",
+        description: "Ristrutturazione completa locale commerciale in Via Enrico Toti, Bari",
+        url: "/ultimi-lavori/ristrutturazione-locale-commerciale"
     },
 
 ]
