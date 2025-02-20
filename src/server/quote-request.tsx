@@ -20,7 +20,7 @@ export const sendQuoteRequest = async ({
 }) => {
   const emailHtmlReceived = await render(<QuoteRequestReceived name={name} phone={phone} email={email} city={city} address={address} message={message} />);
   const emailHtmlSent = await render(<QuoteRequestSent name={name} phone={phone} email={email} city={city} address={address} message={message} />);
-  await sendMail('mossa.eman@gmail.com', "Richiesta Preventivo", '', emailHtmlReceived);
+  await sendMail('riabitareristrutturazioni@gmail.com', "Richiesta Preventivo", '', emailHtmlReceived);
   await sendMail(email, "Nuova richiesta Preventivo", '', emailHtmlSent);
   return;
 };

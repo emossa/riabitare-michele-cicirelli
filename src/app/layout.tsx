@@ -9,6 +9,7 @@ import { GoogleAnalytics } from "nextjs-google-analytics";
 import { Analytics } from "@/components/ui/analytics";
 import { Toaster } from "@/components/ui/toaster";
 import MetaPixel from "@/components/meta-pixel";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans", });
 
@@ -25,7 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <MetaPixel />
+        <Suspense>
+          <MetaPixel />
+        </Suspense>
       </head>
       <body className={cn(
         "min-h-screen bg-background font-sans antialiased",
