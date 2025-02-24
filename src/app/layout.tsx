@@ -10,6 +10,7 @@ import { Analytics } from "@/components/ui/analytics";
 import { Toaster } from "@/components/ui/toaster";
 import MetaPixel from "@/components/meta-pixel";
 import { Suspense } from "react";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans", });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
         <Suspense>
           <MetaPixel />
         </Suspense>
+        <Script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/009e1f0b0f787c3ebedfa325/script.js" />
       </head>
       <body className={cn(
         "min-h-screen bg-background font-sans antialiased",
