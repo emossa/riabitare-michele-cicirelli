@@ -11,6 +11,8 @@ import { Toaster } from "@/components/ui/toaster";
 import MetaPixel from "@/components/meta-pixel";
 import { Suspense } from "react";
 import Script from "next/script";
+import { Analytics as VercelAnalytics } from "@vercel/analytics/react"
+
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans", });
 
@@ -45,6 +47,7 @@ export default function RootLayout({
         </footer>
         <ChatWidget />
         <Analytics />
+        <VercelAnalytics />
         <Toaster />
       </body>
     </html>
