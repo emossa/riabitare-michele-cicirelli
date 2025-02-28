@@ -40,20 +40,20 @@ export const ContactForm = () => {
     // Track form view on mount
     useEffect(() => {
         trackFormView({
-            formId: "quote_request_form",
-            formName: "Quote Request Form",
+            formId: "richiesta_preventivo",
+            formName: "richiesta_preventivo",
             formCategory: "quote"
         })
     }, [])
 
     // Track form start on first interaction
-    const handleFirstInteraction = () => {
-        trackFormStart({
-            formId: "quote_request_form",
-            formName: "Quote Request Form",
-            formCategory: "quote"
-        })
-    }
+    // const handleFirstInteraction = () => {
+    //     trackFormStart({
+    //         formId: "quote_request_form",
+    //         formName: "richiesta_preventivo",
+    //         formCategory: "quote"
+    //     })
+    // }
 
     const onSubmit = async (data: FormValues) => {
         startTransition(async () => {
@@ -70,8 +70,8 @@ export const ContactForm = () => {
 
                 // Track successful form submission
                 trackFormSubmission({
-                    formId: "quote_request_form",
-                    formName: "Quote Request Form",
+                    formId: "richiesta_preventivo",
+                    formName: "Richiesta Preventivo",
                     formCategory: "quote",
                     formData: {
                         name: data.name,
@@ -88,13 +88,6 @@ export const ContactForm = () => {
                 })
             } catch (e) {
                 // Track failed form submission
-                trackFormSubmission({
-                    formId: "quote_request_form",
-                    formName: "Quote Request Form",
-                    formCategory: "quote",
-                    success: false,
-                    failureReason: getErrorMessage(e)
-                })
 
                 toast({
                     title: "Errore",
@@ -147,7 +140,7 @@ export const ContactForm = () => {
                 <Form {...form}>
                     <form
                         onSubmit={form.handleSubmit(onSubmit)}
-                        onFocus={handleFirstInteraction} // Track first interaction
+                    // onFocus={handleFirstInteraction} // Track first interaction
                     >
                         <div className="w-full max-w-6xl mx-auto py-24 px-5">
                             <h1 className="text-white text-4xl font-bold">
