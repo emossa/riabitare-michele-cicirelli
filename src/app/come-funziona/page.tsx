@@ -6,6 +6,7 @@ import { CtaFooter } from "@/components/ui/cta-footer";
 import { GalleryWithThumbnails } from "@/components/ui/galleryWithThumbnails";
 import { House, ShowerHead, HousePlug, ThermometerSun, WandSparkles, Recycle, Droplets, LayoutDashboard, HousePlus, PaintRoller, Zap } from "lucide-react";
 import { DescriptionWithImage } from "@/components/ui/description-with-image";
+import { Metadata } from "next";
 
 const images = [
     {
@@ -62,6 +63,11 @@ const services = [
         icon: <Zap size={70} className='text-primary' />
     },
 ]
+
+export const metadata: Metadata = {
+    title: "Come funziona",
+    description: "Dalla progettazione alla realizzazione, il nostro lavoro è sempre allineato ai bisogni del cliente.",
+};
 
 export default function ComeFunziona() {
     return (

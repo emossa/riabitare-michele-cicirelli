@@ -8,6 +8,7 @@ import { CtaFooter } from "@/components/ui/cta-footer";
 import { House, ShowerHead, HousePlug, ThermometerSun, PaintRoller } from "lucide-react";
 import { url } from "inspector";
 import { UltimiLavori } from "@/components/ui/ultimi-lavori";
+import { Metadata } from "next";
 
 const images = [
   {
@@ -52,6 +53,11 @@ const services = [
     url: '/tinteggiatura'
   }
 ]
+
+export const metadata: Metadata = {
+  title: "Riabitare Ristrutturazioni",
+  description: "Trasformiamo la tua casa senza stress.",
+};
 
 export default function Home() {
   return (

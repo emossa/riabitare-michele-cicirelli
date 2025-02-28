@@ -5,6 +5,7 @@ import { Reviews } from "@/components/ui/reviews";
 import { CtaFooter } from "@/components/ui/cta-footer";
 import { GalleryWithThumbnails } from "@/components/ui/galleryWithThumbnails";
 import { House, ShowerHead, HousePlug, ThermometerSun, WandSparkles, Recycle, Droplets, LayoutDashboard } from "lucide-react";
+import { Metadata } from "next";
 
 const images = [
     { src: "/galleria-bagno/galleria-servizio-bagno1.jpg", alt: "Bagno", description: "Bagno" },
@@ -42,6 +43,11 @@ const services = [
         icon: <LayoutDashboard size={70} className='text-primary' />
     },
 ]
+
+export const metadata: Metadata = {
+    title: "Rifacimento Bagno",
+    description: "Ristrutturiamo il tuo bagno in modo completo.",
+};
 
 export default function RifacimentoBagno() {
     return (

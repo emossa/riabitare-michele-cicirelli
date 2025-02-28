@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Cookie Policy",
+    description: "Trasformiamo la tua casa senza stress.",
+};
 
 const Page = async () => {
     return (

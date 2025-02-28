@@ -16,10 +16,7 @@ import { Analytics as VercelAnalytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans", });
 
-export const metadata: Metadata = {
-  title: "Riabitare Ristrutturazioni",
-  description: "Trasformiamo la tua casa senza stress.",
-};
+
 
 export default function RootLayout({
   children,

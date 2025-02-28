@@ -3,6 +3,7 @@ import { CtaFooter } from "@/components/ui/cta-footer";
 import { Gallery } from "@/components/ui/gallery";
 import { GalleryWithThumbnails } from "@/components/ui/galleryWithThumbnails";
 import { Hero } from "@/components/ui/hero";
+import { Metadata } from "next";
 import Image from "next/image";
 
 const gallery = [
@@ -35,6 +36,12 @@ const galleryPlanimetria = [
     { src: "/ultimi-lavori/planimetria-dopo.jpg", alt: "Ristrutturazione completa chiavi in mano", description: "Dopo" },
     { src: "/ultimi-lavori/planimetria-quadra.jpg", alt: "Ristrutturazione completa chiavi in mano", description: "Dopo 3D" },
 ]
+
+export const metadata: Metadata = {
+    title: "Ristrutturazione appartamento Bari",
+    description: "Ristrutturazione completa chiavi in mano di un appartamento in Via Giulio Petroni, Bari",
+};
+
 export default function AppartamentoBari() {
     return (
         <div>

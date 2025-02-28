@@ -5,6 +5,7 @@ import { Reviews } from "@/components/ui/reviews";
 import { CtaFooter } from "@/components/ui/cta-footer";
 import { GalleryWithThumbnails } from "@/components/ui/galleryWithThumbnails";
 import { House, ShowerHead, HousePlug, ThermometerSun, WandSparkles, Recycle, Droplets, LayoutDashboard, PaintRoller, PencilRuler, SquareMousePointer } from "lucide-react";
+import { Metadata } from "next";
 
 const images = [
     { src: "/galleria-tint/tinteggiatura7.webp", alt: "Tinteggiatura e Controsoffitti", description: "Tinteggiatura e Controsoffitti" },
@@ -42,6 +43,11 @@ const services = [
         icon: <Droplets size={70} className='text-primary' />
     },
 ]
+
+export const metadata: Metadata = {
+    title: "Tinteggiatura e controsoffitti",
+    description: "Tinteggiatura e controsoffitti professionali per interni ed esterni",
+};
 
 export default function RifacimentoBagno() {
     return (

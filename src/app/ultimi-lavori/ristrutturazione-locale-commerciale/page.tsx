@@ -3,6 +3,7 @@ import { CtaFooter } from "@/components/ui/cta-footer";
 import { Gallery } from "@/components/ui/gallery";
 import { GalleryWithThumbnails } from "@/components/ui/galleryWithThumbnails";
 import { Hero } from "@/components/ui/hero";
+import { Metadata } from "next";
 import Image from "next/image";
 
 const gallery = [
@@ -36,6 +37,12 @@ const galleryPlanimetria = [
     { src: "/ultimi-lavori/mastromatteo-3.jpg", alt: "Ristrutturazione bagno completa", description: "Dopo" },
     { src: "/ultimi-lavori/mastromatteo-4.jpg", alt: "Ristrutturazione bagno completa", description: "Dopo" },
 ]
+
+export const metadata: Metadata = {
+    title: "Ristrutturazione Locale Commerciale",
+    description: "Ristrutturazione completa locale commerciale in Via Enrico Toti, Bari",
+};
+
 export default function BagnoToritto() {
     return (
         <div>

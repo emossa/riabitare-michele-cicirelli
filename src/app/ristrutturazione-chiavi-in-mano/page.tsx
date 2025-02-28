@@ -5,6 +5,7 @@ import { Reviews } from "@/components/ui/reviews";
 import { CtaFooter } from "@/components/ui/cta-footer";
 import { GalleryWithThumbnails } from "@/components/ui/galleryWithThumbnails";
 import { House, ShowerHead, HousePlug, ThermometerSun, WandSparkles, Recycle, Droplets, LayoutDashboard, HousePlus, PaintRoller, Zap } from "lucide-react";
+import { Metadata } from "next";
 
 const images = [
     {
@@ -61,6 +62,11 @@ const services = [
         icon: <Zap size={70} className='text-primary' />
     },
 ]
+
+export const metadata: Metadata = {
+    title: "Ristrutturazione chiavi in mano",
+    description: "Trasformiamo la tua casa senza stress.",
+};
 
 export default function RifacimentoBagno() {
     return (
