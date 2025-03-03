@@ -12,6 +12,7 @@ import MetaPixel from "@/components/meta-pixel";
 import { Suspense } from "react";
 import Script from "next/script";
 import { Analytics as VercelAnalytics } from "@vercel/analytics/react"
+import { Hotjar } from "@/components/hotjar";
 
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans", });
@@ -30,6 +31,7 @@ export default function RootLayout({
           <MetaPixel />
         </Suspense>
         <Script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/009e1f0b0f787c3ebedfa325/script.js" />
+        <Hotjar></Hotjar>
       </head>
       <body className={cn(
         "min-h-screen bg-background font-sans antialiased",
