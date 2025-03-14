@@ -30,16 +30,14 @@ export default function RootLayout({
           <MetaPixel />
         </Suspense>
         <Script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/009e1f0b0f787c3ebedfa325/script.js" />
-        <Script id="clarity" type="text/javascript" >
+        <Script id="clarity-script" strategy="afterInteractive">
           {`
-            <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "qo1asoghz0");
-</script>
-            `}
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "qo1asoghz0");
+          `}
         </Script>
       </head>
       <body className={cn(
