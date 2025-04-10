@@ -75,42 +75,44 @@ export default function ComeFunziona() {
             <Hero
                 src="/hero.webp"
                 title="Come funziona?"
-                subtitle="Ecco le varie fasi del nostro lavoro, dalla progettazione alla realizzazione."
+                subtitle="Tutte le fasi che devi conoscere"
             />
             <div className="lg:px-24">
                 <DescriptionWithImage
                     src="/fasi1.webp"
                     alt="Sopralluogo e pianificazione"
                     title="Sopralluogo e pianificazione"
-                    subtitle="Il primo passo per trasformare la tua casa"
-                    description="La prima fase prevede un sopralluogo sul sito per valutare le condizioni iniziali e discutere le esigenze del cliente. Viene definito un piano dettagliato, inclusi budget, tempistiche e materiali da utilizzare. Viene inoltre sviluppato un progetto tecnico in linea con le richieste."
-                    secondDescription="Il cliente riceve un preventivo dettagliato e un piano di lavoro, per avere un'idea chiara di come si svolgeranno i lavori e quali saranno i costi."
+                    subtitle="Il primo passo con e per Riabitare"
+                    description="Per prima cosa si procede con una valutazione del tuo spazio: un tecnico analizza le condizioni iniziali della tua casa, del tuo bagno, del tuo locale commerciale o di ciò che vuoi trasformare. "
+                    secondDescription="A seconda delle tue esigenze si definisce il piano: budget, tempistiche e materiali su misura per te, in modo da poter stabilire progetto tecnico e preventivo, grazie ai quali saprai esattamente come si svolgeranno i lavori e i relativi costi."
                     orientation="left"
                 />
                 <DescriptionWithImage
                     src="/fasi2.webp"
                     alt="Demolizione e preparazione"
                     title="Demolizione e preparazione"
-                    subtitle="Prepariamo gli spazi per la ristrutturazione"
-                    description="In questa fase, si procede alla rimozione delle strutture esistenti che devono essere sostituite, come muri, pavimenti, impianti idraulici o elettrici. La preparazione dello spazio è fondamentale per garantire un lavoro ordinato e senza intoppi."
-                    secondDescription="Vengono effettuati interventi di ripristino e messa in sicurezza, per preparare l'ambiente alla fase successiva."
+                    subtitle="Fare spazio al nuovo"
+                    description="La preparazione dello spazio è essenziale per garantire un lavoro senza imprevisti."
+                    secondDescription="Che si tratti di pareti, pavimenti o impianti, si procede con la rimozione di tutto ciò che deve essere sostituito e soprattutto è il momento di messa in sicurezza l’ambiente, affinché sia pronto per i lavori."
                 />
                 <DescriptionWithImage
                     src="/fasi3.webp"
                     alt="Lavori strutturali e impiantistici"
                     title="Lavori strutturali e impiantistici"
-                    subtitle="Realizziamo le migliorie necessarie alla struttura e agli impianti"
-                    description="Si passa all'installazione dei nuovi impianti (elettrici, idraulici, di climatizzazione) e all'esecuzione dei lavori strutturali come la realizzazione di pareti divisorie o controsoffitti. Tutto viene eseguito in conformità con le normative vigenti."
-                    secondDescription="I materiali utilizzati sono di alta qualità e rispettano gli standard di sicurezza, per garantire un risultato duraturo e affidabile."
+                    subtitle="Ripartire dalle fondamenta"
+                    description="Affinché la trasformazione avvenga è necessario occuparsi anche di ciò che non si vede: è il momento di pensare a tutti gli impianti (elettrici, idraulici e di climatizzazione). Si passa poi a pareti e controsoffitti, con un occhio sempre attento al rispetto delle normative. "
+                    secondDescription="Ogni dettaglio è importante perché crediamo che sia grazie alla cura e all’attenzione ai materiali che si possa ottenere un risultato sicuro, solido e duraturo e che possa coniugare funzionalità e comfort. "
                     orientation="left"
                 />
                 <DescriptionWithImage
                     src="/fasi4.webp"
                     alt="Finiture e consegna"
                     title="Finiture e consegna"
-                    subtitle="Ultimiamo i lavori e consegniamo la tua casa rinnovata"
-                    description="In questa fase finale si realizzano le finiture, che includono la tinteggiatura, la posa di pavimenti e rivestimenti, l'installazione di infissi e complementi d'arredo. Una volta completati i lavori, si effettua un controllo finale prima della consegna chiavi in mano al cliente, assicurando che tutto sia conforme al progetto iniziale."
-                    secondDescription="Il cliente riceve la casa ristrutturata e pronta per essere abitata, con la garanzia di un lavoro eseguito a regola d'arte e rispettando le tempistiche concordate."
+                    subtitle="La fine dei lavori è per te un nuovo inizio"
+                    description="Eccoci arrivati all’ultima fase! 
+Tinteggiatura, pavimenti, rivestimenti e installazione degli infissi sono gli ultimi ritocchi che ti separano dal Riabitare il tuo progetto, ma prima un po’ di pazienza per il controllo qualità."
+                    secondDescription="È importante per noi garantirti un risultato impeccabile, per questo ci premuriamo di verificare il funzionamento di ogni cosa e la precisione di ogni elemento con minuzia (e, lo ammettiamo, anche un po’ di pignoleria). 
+Ora che è tutto pronto, non ti resta che goderti il risultato."
                 />
                 {/* <Description
                     title="Ristrutturazione chiavi in mano"

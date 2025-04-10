@@ -72,6 +72,29 @@ export const DesktopNavigation = () => {
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
+                            <NavigationMenuTrigger>Ultimi lavori</NavigationMenuTrigger>
+                            <NavigationMenuContent className="">
+                                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                                    <Link href={'/ultimi-lavori/appartamento-bari'} passHref>
+                                        <ListItem title="Ristrutturazione completa">
+                                            Ristrutturazione appartamento in Via Giulio Petroni, Bari
+                                        </ListItem>
+                                    </Link>
+                                    <Link href={'/ultimi-lavori/bagno-toritto'} passHref>
+                                        <ListItem title="Ristrutturazione bagno">
+                                            Ristrutturazione Bagno in Via Mentana, Toritto
+                                        </ListItem>
+                                    </Link>
+                                    <Link href={'/ultimi-lavori/ristrutturazione-locale-commerciale'} passHref>
+                                        <ListItem title="Ristrutturazione locale commerciale">
+                                            Ristrutturazione Locale Commerciale in Via Enrico Toti, Bari
+                                        </ListItem>
+                                    </Link>
+
+                                </ul>
+                            </NavigationMenuContent>
+                        </NavigationMenuItem>
+                        <NavigationMenuItem>
                             <Link href="/richiedi-preventivo" legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                     Contatti

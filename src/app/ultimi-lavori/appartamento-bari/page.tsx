@@ -45,7 +45,7 @@ export const metadata: Metadata = {
 export default function AppartamentoBari() {
     return (
         <div>
-            <Hero src="/ultimi-lavori/planimetria-quadra.jpg" width={1280} height={720} imageClassName="object-contain" title="Appartamento Bari" subtitle="Ristrutturazione completa chiavi in mano di un appartamento in Via Giulio Petroni, Bari" />
+            <Hero src="/ultimi-lavori/planimetria-quadra.jpg" width={1280} height={720} imageClassName="object-contain" title="Ristrutturazione appartamento" subtitle="Ristrutturazione completa chiavi in mano di un appartamento in Via Giulio Petroni, Bari" />
             <div className="flex lg:flex-row flex-col-reverse mt-24">
                 <div className="w-full lg:w-[50%] lg:px-24 py-24 px-5 lg:py-0 ">
                     <Carousel>
@@ -65,11 +65,13 @@ export default function AppartamentoBari() {
                     <div className='w-full max-w-lg'>
                         <div className="w-32 h-4 bg-gray-200"></div>
                         <div>
-                            <h2 className="text-4xl font-bold mt-2 lg:mt-4">Ristrutturazione Completa Chiavi in Mano</h2>
+                            <h2 className="text-4xl font-bold mt-2 lg:mt-4">Una casa che accoglie</h2>
                             <span className="text-primary text-2xl block">Via Giulio Petroni, Bari</span>
                         </div>
                     </div>
-                    <p className='mt-5 w-full max-w-lg'>L'abitazione oggetto della ristrutturazione aveva una tipica disposizione anni 70 con ingresso ed un solo bagno. La ristrutturazione ha permesso di unire l’ingresso con il soggiorno tramite la demolizione del tramezzo che separava i due ambienti creando così una zona living ampia e luminosa. La realizzazione del secondo bagno, come richiesto dalla committenza, è stata possibile riducendo il bagno esistente e la camera dei ragazzi. Gli impianti idrici-fognari, termici ed elettrici obsoleti sono stati ricostruiti con gli attuali standard. Gli infissi  in legno sostituiti da infissi in alluminio a taglio termico, mentre le porte interne sono state sostituite con porte lamellari laccate con finitura patinata.
+                    <p className='mt-5 w-full max-w-lg'>Partendo da un appartamento degli anni ’70 con una disposizione ormai datata, abbiamo trasformato gli spazi in modo da dargli nuova vita e adattarlo a chi l’ha scelto e ci ha scelti.
+                        Il desiderio era quello di creare un’area living che fosse comoda, accogliente e piena di luce e magari ottenere anche un bagno in più. Per far ciò abbiamo unito ingresso e soggiorno e con un’ottimizzazione degli spazi abbiamo aggiunto il comfort di un secondo bagno. Gli impianti idraulici, termici ed elettrici sono stati completamente rifatti, garantendo sicurezza e funzionalità. Non abbiamo dimenticato nemmeno gli infissi e le porte: i primi (che erano in legno) sono stati sostituiti con quelli in alluminio a taglio termico, le seconde ora sono eleganti e moderne, con una rifinitura patinata.
+                        Ogni passo di questo progetto è stato pensato per dare a questo appartamento un respiro più ampio ed insieme la possibilità a chi lo abita di poterlo chiamare casa.
                     </p>
                 </div>
             </div>

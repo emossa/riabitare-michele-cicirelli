@@ -66,23 +66,17 @@ export default function BagnoToritto() {
                     <div className='w-full max-w-lg'>
                         <div className="w-32 h-4 bg-gray-200"></div>
                         <div>
-                            <h2 className="text-4xl font-bold mt-2 lg:mt-4">Ristrutturazione Locale Commerciale</h2>
+                            <h2 className="text-4xl font-bold mt-2 lg:mt-4">Un’altra storia</h2>
                             <span className="text-primary text-2xl block">Via Enrico Toti, Bari</span>
                         </div>
                     </div>
                     <p className='mt-5 w-full max-w-lg'>
-                        L’ esigenza del nuovo acquirente era quella di cambiare la destinazione d’uso del locale. <br />
-                        Il locale si presentava piuttosto disastrato ad un primo sopralluogo (ex birreria), impianto
-                        elettrico fatiscente ed impianto idrico-fognario fuori uso. <br />
-                        L’operazione di ristrutturazione ha riguardato la demolizione del precedente controsoffitto
-                        pannellato in fibra minerale 60 x 60, la nuova realizzazione del controsoffitto in
-                        cartongesso per l’abbassamento del solaio, l’inserimento del nuovo impianto elettrico, del
-                        condizionamento e dei corpi illuminanti.  <br />
-                        Il bagno è stato parzialmente modificato al fine di adeguare gli impianti.
-                        La pavimentazione in marmette sottostante il linoleum è stata coperta con gres effetto
-                        legno. <br />
-                        La pitturazione del controsoffitto e delle pareti in tinta bianca, per esaltare l’ampiezza del
-                        locale.
+                        Questa è la storia di una ex birreria che ha ripreso vita come locale commerciale.
+                        A dirla tutta, quando il nuovo proprietario ha visto questo posto per la prima volta ha fatto fatica ad immaginarne il potenziale, eppure oggi la trasformazione è avvenuta.
+                        Gli impianti erano fuori uso, i pavimenti usurati, il controsoffitto ormai superato… eppure, con dedizione e cura siamo riusciti a progettare insieme un nuovo ambiente pronto ad accogliere nuove idee e persone. <br />
+                        Siamo partiti rifacendo completamente impianti elettrico ed idraulico. Il linoleum è stato sostituito con un gres effetto legno, perfetto per un ambiente caldo e accogliente.
+                        Per rendere lo spazio più luminoso e valorizzare ogni angolo abbiamo scelto il bianco per pareti e controsoffitto. Poi, per migliorare estetica e vivibilità, anche un nuovo controsoffitto che integra illuminazione e condizionamento. <br />
+                        Niente ci rende più orgogliosi che aiutarti a realizzare i tuoi sogni (ma al posto bacchetta magica usiamo attrezzi e olio di gomito).
                     </p>
                 </div>
             </div>
@@ -114,7 +108,7 @@ export default function BagnoToritto() {
             <div className="lg:px-10">
                 <CtaFooter img="/planimetria.jpg" ></CtaFooter>
             </div>
-        </div>
+        </div >
 
     )
 }

@@ -42,23 +42,23 @@ const images = [
 
 const services = [
     {
-        title: "Ristrutturazione completa",
-        description: "Offriamo un rifacimento totale degli spazi interni, gestendo impianti elettrici, idraulici, pavimenti e finiture, per trasformare ogni ambiente in uno spazio moderno e funzionale.",
+        title: "Trasformazione totale degli spazi",
+        description: "Impianti elettrici, idraulici, pavimenti e finiture.",
         icon: <Recycle size={70} className='text-primary' />
     },
     {
         title: "Tinteggiatura e rasatura",
-        description: "Eseguiamo lavori di preparazione delle pareti con rasatura professionale e tinteggiatura di alta qualità, garantendo una superficie liscia e finiture estetiche impeccabili.",
+        description: "Risultato impeccabile garantito dal lavoro di rasatura e preparazione delle superfici e vernici di qualità.",
         icon: <PaintRoller size={70} className='text-primary' />
     },
     {
         title: "Rifacimento tetto",
-        description: "Interveniamo sulla sostituzione o riparazione del tetto, migliorando l'isolamento termico e proteggendo la casa dalle intemperie, con materiali e tecniche all’avanguardia.",
+        description: "Sostituzione o riparazione del tetto, miglioramento dell’isolamento termico e protezione della tua casa dalle intemperie e dai segni del tempo.",
         icon: <HousePlus size={70} className='text-primary' />
     },
     {
         title: "Ristrutturazione energetica",
-        description: "Realizziamo interventi per ottimizzare l'efficienza energetica della tua casa, inclusi isolamento termico e aggiornamenti degli impianti, per ridurre consumi e costi.",
+        description: " Ottimizzazione energetica e aggiornamento degli impianti per ridurre consumi e costi.",
         icon: <Zap size={70} className='text-primary' />
     },
 ]
@@ -74,16 +74,17 @@ export default function RifacimentoBagno() {
             <Hero
                 src="/hero-ristr.webp"
                 title="Ristrutturazione chiavi in mano"
-                subtitle="Offriamo un servizio completo e personalizzato, dalla progettazione alla consegna."
+                subtitle="Con te dal progetto alla consegna"
             />
             <div className="lg:px-24">
                 <Description
                     title="Ristrutturazione chiavi in mano"
-                    subtitle="Trasformiamo la tua casa senza stress."
-                    firstText="Il nostro servizio di ristrutturazione chiavi in mano gestisce ogni aspetto del progetto, dalla progettazione alla realizzazione finale. Ci occupiamo di demolizioni, impianti, pavimentazioni, infissi e finiture, garantendo qualità e rispetto delle tempistiche concordate, così il cliente non deve preoccuparsi di coordinare i vari professionisti."
-                    secondText="Collaboriamo con architetti e artigiani qualificati per trasformare gli spazi secondo i desideri del cliente. Ogni dettaglio, dall'idea iniziale alla consegna, viene gestito da noi, offrendo soluzioni personalizzate e senza imprevisti."
+                    subtitle="Riabita i tuoi spazi."
+                    firstText="Di cosa hai bisogno per dar vita ad una casa che ti somiglia?
+Demolizioni, impianti, pavimenti, infissi e finiture non saranno più una tua preoccupazione, siamo qui per questo: con il nostro servizio chiavi in mano tutto ciò che dovrai fare sarà rilassarti, perché al resto ci pensiamo noi."
+                    secondText="Con un unico interlocutore sempre al tuo fianco ci premuriamo di seguirti sempre, garantendoti progettazione su misura, trasparenza, tempi certi e massima cura dei dettagli, in collaborazione con architetti e artigiani qualificati."
                 />
-                <GalleryWithThumbnails images={images} title="I nostri lavori" subtitle="Trasformiamo la tua casa senza stress." description="La qualità del nostro servizio di ristrutturazione chiavi in mano si riflette nell'attenzione ai dettagli, nell'uso di materiali eccellenti e nella collaborazione con professionisti esperti. Garantiamo lavori eseguiti a regola d'arte, rispettando tempi e budget, offrendo soluzioni personalizzate che rispondono alle esigenze specifiche di ogni cliente." />
+                <GalleryWithThumbnails images={images} title="I nostri lavori" subtitle="Trasformiamo la tua casa con passione e concretezza." description="La nostra missione è far in modo che l’amore per il nostro lavoro si rifletta sempre nel risultato finale, e per far ciò ci assicuriamo di utilizzare solo materiali eccellenti e collaborare con professionisti esperti nel settore, lavorando con cura e precisione, nel rispetto di tempistiche e costi, concordati secondo le tue esigenze. " />
                 <Servizi services={services} />
                 <CtaFooter img="/hero2-ristr.webp" />
             </div>

@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 export default function BagnoToritto() {
     return (
         <div>
-            <Hero src="/ultimi-lavori/planimetria-quadra-palmiotto.jpg" width={1280} height={720} imageClassName="object-contain" title="Ristrutturazione Bagno Toritto" subtitle="Ristrutturazione completa bagno in un appartamento in Via Mentana, Toritto" />
+            <Hero src="/ultimi-lavori/planimetria-quadra-palmiotto.jpg" width={1280} height={720} imageClassName="object-contain" title="Ristrutturazione Bagno" subtitle="Ristrutturazione completa bagno in un appartamento in Via Mentana, Toritto" />
             <div className="flex lg:flex-row flex-col-reverse mt-24">
                 <div className="w-full lg:w-[50%] lg:px-24 py-24 px-5 lg:py-0 ">
                     <Carousel>
@@ -66,11 +66,13 @@ export default function BagnoToritto() {
                     <div className='w-full max-w-lg'>
                         <div className="w-32 h-4 bg-gray-200"></div>
                         <div>
-                            <h2 className="text-4xl font-bold mt-2 lg:mt-4">Ristrutturazione Bagno Completa</h2>
+                            <h2 className="text-4xl font-bold mt-2 lg:mt-4">Da imprevisto a opportunità</h2>
                             <span className="text-primary text-2xl block">Via Mentana, Toritto</span>
                         </div>
                     </div>
-                    <p className='mt-5 w-full max-w-lg'>Il rifacimento del bagno resosi necessario dal guasto degli impianti, ha previsto la demolizione completa del bagno e la sostituzione della vasca con la doccia per ottimizzare lo spazio per la collocazione della lavatrice. La pavimentazione e i rivestimenti in gres 60 x 60 effetto cemento in due toni differenti sono stati scelti per dare uno stile contemporaneo.
+                    <p className='mt-5 w-full max-w-lg'>Partendo da un appartamento degli anni ’70 con una disposizione ormai datata, abbiamo trasformato gli spazi in modo da dargli nuova vita e adattarlo a chi l’ha scelto e ci ha scelti.
+                        Il desiderio era quello di creare un’area living che fosse comoda, accogliente e piena di luce e magari ottenere anche un bagno in più. Per far ciò abbiamo unito ingresso e soggiorno e con un’ottimizzazione degli spazi abbiamo aggiunto il comfort di un secondo bagno. Gli impianti idraulici, termici ed elettrici sono stati completamente rifatti, garantendo sicurezza e funzionalità. Non abbiamo dimenticato nemmeno gli infissi e le porte: i primi (che erano in legno) sono stati sostituiti con quelli in alluminio a taglio termico, le seconde ora sono eleganti e moderne, con una rifinitura patinata.
+                        Ogni passo di questo progetto è stato pensato per dare a questo appartamento un respiro più ampio ed insieme la possibilità a chi lo abita di poterlo chiamare casa.
                     </p>
                 </div>
             </div>

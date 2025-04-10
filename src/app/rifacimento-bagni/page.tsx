@@ -24,22 +24,22 @@ const images = [
 const services = [
     {
         title: "Ristrutturazione completa",
-        description: "Include la sostituzione di tutti gli elementi del bagno, come sanitari, piastrelle, pavimenti, impianti idraulici, e impianti elettrici. Solitamente implica un rifacimento totale dell’ambiente.",
+        description: "Rifacimento totale dell’ambiente che prevede rimozione e sostituzione di tutti gli elementi del bagno: sanitari, piastrelle, pavimenti, impianti idraulici ed elettrici.",
         icon: <Recycle size={70} className='text-primary' />
     },
     {
         title: "Sostituzione dei sanitari",
-        description: "Prevede il cambio di lavabo, wc, bidet e doccia o vasca. Questo tipo di intervento è meno invasivo e può migliorare estetica e funzionalità senza alterare l’intero bagno.",
+        description: "Rifacimento parziale utile a migliorare l’estetica e la funzionalità dell’ambiente ma in modo meno invasivo rispetto al rifacimento totale. Prevede sostituzione di lavabo, water, bidet, doccia o vasca. ",
         icon: <Droplets size={70} className='text-primary' />
     },
     {
         title: "Rifacimento della doccia o vasca",
-        description: "Concentrato sull'area doccia o vasca, questo intervento può includere la sostituzione del box doccia, la trasformazione della vasca in doccia o l’aggiunta di una cabina doccia moderna.",
+        description: "Intervento parziale che può consistere nella sostituzione del box doccia o trasformazione della vasca in doccia o ancora l’aggiunta di una cabina doccia moderna.",
         icon: <ShowerHead size={70} className='text-primary' />
     },
     {
         title: "Rifacimento pavimenti e rivestimenti",
-        description: "Consiste nel rinnovare solo piastrelle e pavimenti per dare un aspetto nuovo al bagno. Questo intervento può includere l'impermeabilizzazione delle superfici.",
+        description: "Rinnovazione solo di piastrelle e pavimenti con eventuale impermeabilizzazione delle superfici.  ",
         icon: <LayoutDashboard size={70} className='text-primary' />
     },
 ]
@@ -55,16 +55,18 @@ export default function RifacimentoBagno() {
             <Hero
                 src="/bagno-g.webp"
                 title="Rifacimento Bagno"
-                subtitle="Ristrutturiamo il tuo bagno in modo completo."
+                subtitle="Una trasformazione completa"
             />
             <div className="lg:px-24">
                 <Description
                     title="Rifacimento Bagno"
-                    subtitle="Ristrutturiamo il tuo bagno in modo completo."
-                    firstText="l servizio di rifacimento del bagno offerto da Riabitare Ristrutturazioni inizia con una consulenza personalizzata. Un tecnico effettua un sopralluogo per valutare lo stato attuale del bagno e discutere con il cliente le esigenze e i desideri. Successivamente, viene sviluppato un progetto su misura che include il nuovo layout, la scelta dei materiali, i sanitari e i rivestimenti. Viene poi fornito un preventivo dettagliato con i costi e i tempi di realizzazione."
-                    secondText="Una volta approvato il progetto, Riabitare Ristrutturazioni passa alla fase operativa: demolizione del vecchio bagno, installazione degli impianti idraulici ed elettrici, posa dei nuovi rivestimenti e installazione di sanitari e arredi scelti. L'impresa assicura un lavoro a regola d'arte, rispettando i tempi concordati. Alla fine, viene effettuata una pulizia approfondita e il bagno viene consegnato pronto all'uso, garantendo qualità e durabilità."
+                    subtitle="Riabita il tuo spazio di benessere."
+                    firstText="Il tuo bagno più che vintage è invecchiato male? Un guasto improvviso ti ha rovinato i piani e ora non sai come fare?
+Che si tratti di voglia di cambiare o di un imprevisto sgradito, siamo pronti ad aiutarti a trasformare tutto in opportunità."
+                    secondText="Per noi un bagno non è semplicemente una stanza della casa, ma un luogo di benessere e quiete. Per questo ti assicuriamo un progetto personalizzato e un preventivo con costi e tempi sempre rispettati. 
+Non ti resterà che rilassarti: demolizione del vecchio bagno, installazione di impianti, arredi, sanitari e posa dei rivestimenti sono compito nostro."
                 />
-                <GalleryWithThumbnails images={images} title="I nostri lavori" subtitle="Rivoluzioniamo il tuo bagno" description="Riabitare Ristrutturazioni utilizza materiali di alta qualità, garantendo durabilità ed estetica raffinata. Il design è moderno e funzionale, con attenzione ai dettagli e soluzioni innovative. I rivestimenti, i sanitari e gli arredi sono selezionati da brand prestigiosi, assicurando eleganza e resistenza nel tempo." />
+                <GalleryWithThumbnails images={images} title="I nostri lavori" subtitle="Rivoluzioniamo il tuo bagno" description="Materiali di alta qualità, durabilità ed estetica raffinata. Creiamo per te soluzioni funzionali alle tue esigenze selezionando rivestimenti, sanitari e arredi fra i migliori marchi, assicurandoti bellezza e resistenza nel tempo." />
                 <Servizi services={services} />
                 <CtaFooter img="/galleria-bagno/galleria-servizio-bagno2.jpg" />
             </div>

@@ -3,10 +3,8 @@ import { Hero } from "@/components/ui/hero";
 import { Gallery } from "@/components/ui/gallery";
 import { Servizi } from "@/components/ui/servizi";
 import { Reviews } from "@/components/ui/reviews";
-import Image from "next/image";
 import { CtaFooter } from "@/components/ui/cta-footer";
-import { House, ShowerHead, HousePlug, ThermometerSun, PaintRoller } from "lucide-react";
-import { url } from "inspector";
+import { House, ShowerHead, PaintRoller } from "lucide-react";
 import { UltimiLavori } from "@/components/ui/ultimi-lavori";
 import { Metadata } from "next";
 
@@ -36,19 +34,19 @@ const images = [
 const services = [
   {
     title: "Ristrutturazione chiavi in mano",
-    description: "Trasformiamo la tua casa senza stress. Offriamo un servizio completo e personalizzato, dalla progettazione alla consegna.",
+    description: "Un servizio completo e personalizzato, dalla progettazione alla consegna.",
     icon: <House size={70} className='text-primary mx-auto' />,
     url: '/ristrutturazione-chiavi-in-mano'
   },
   {
     title: "Rifacimento del bagno",
-    description: "Rinnova il tuo spazio con stile. Offriamo design moderno, materiali di alta qualità e installazione professionale per un bagno funzionale e elegante.",
+    description: "Trasformazione su misura per le tue esigenze.",
     icon: <ShowerHead size={70} className='text-primary mx-auto' />,
     url: '/rifacimento-bagni'
   },
   {
     title: "Tinteggiatura e controsoffitti",
-    description: "Offriamo tinteggiature professionali per interni ed esterni, garantendo precisione e utilizzo di vernici di qualità.",
+    description: "Massima precisione e materiali di qualità per interni ed esterni.",
     icon: <PaintRoller size={70} className='text-primary mx-auto' />,
     url: '/tinteggiatura'
   }
@@ -71,8 +69,8 @@ export default function Home() {
         <Description
           title="Riabitare Ristrutturazioni"
           subtitle="di Michele Cicirelli"
-          firstText={`Riabitare Ristrutturazioni è un' azienda con oltre 20 anni di esperienza nel settore delle ristrutturazioni chiavi in mano di abitazioni, bagni, attività commerciali ed esterni. La nostra impresa si distingue per il rapporto di fiducia con la clientela e per le ristrutturazioni di pregio con l’ attenzione ai dettagli e l’ utilizzo di materiali e finiture di qualità.`}
-          secondText={`Inoltre, mette a disposizione dei suoi clienti, personale qualificato e tecnici a supporto di tutto il processo: dai sopralluoghi preliminari, alla fase di preventivazione dei lavori, alla progettazione e scelta dei materiali, al disbrigo delle pratiche edilizie, alla realizzazione del progetto di ristrutturazione, pagamenti personalizzati ed assistenza pre, durante e post lavori.`}
+          firstText={`Riabitare Ristrutturazioni nasce più di vent’anni fa a Toritto con l’obiettivo di accompagnarti passo dopo passo nella costruzione del tuo angolo di mondo (purché si trovi in provincia di Bari!). Che si tratti di case, appartamenti, locali commerciali, bagni o esterni, con il nostro servizio di ristrutturazioni chiavi in mano non sarai mai solo.`}
+          secondText={`L’attenzione ai dettagli e ai materiali è importante tanto quanto la tua fiducia, garantita dal supporto continuo in tutte le fasi del viaggio: siamo con te dai sopralluoghi, alla progettazione e ai lavori, discutendo sempre in modo chiaro di prezzi, pagamenti, tempistiche e pratiche burocratiche, restando in contatto con te per garantire assistenza prima, durante e dopo la fine dei lavori. Ti assicuriamo un lavoro di qualità e nessuna preoccupazione, perché ciò che più ci sta a cuore è poter dare vita ai tuoi progetti e Riabitare i tuoi spazi.`}
         />
         <Gallery images={images} />
         <Servizi services={services} />

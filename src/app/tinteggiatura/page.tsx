@@ -24,22 +24,22 @@ const images = [
 const services = [
     {
         title: "Tinteggiatura interni ed esterni",
-        description: "Verniciature professionali per abitazioni, uffici e locali commerciali, con una vasta gamma di colori e finiture per adattarsi a ogni ambiente.",
+        description: "Rivoluziona abitazioni, uffici, locali commerciali scegliendo fra una asta gamma di colori e finiture.",
         icon: <PaintRoller size={70} className='text-primary' />
     },
     {
         title: "Rasatura e preparazione pareti",
-        description: "Interventi di rasatura, stuccatura e preparazione delle superfici per garantire una tinteggiatura uniforme e duratura.",
+        description: "Rasatura, stuccatura e preparazione delle superfici per garantirti un lavoro uniforme e resistente.",
         icon: <SquareMousePointer size={70} className='text-primary' />
     },
     {
         title: "Controsoffitti in cartongesso",
-        description: "Realizzazione di controsoffitti in cartongesso per migliorare l’isolamento, nascondere impianti o creare giochi di luci e forme.",
+        description: "L’intervento perfetto per migliorare i tuoi ambienti, coprendo ogni inestetismo.",
         icon: <PencilRuler size={70} className='text-primary' />
     },
     {
         title: "Controsoffitti isolanti",
-        description: " Installazione di controsoffitti con materiali isolanti per migliorare l’acustica e l’efficienza energetica degli ambienti, combinando funzionalità ed estetica.",
+        description: "Combinazione di funzionalità ed estetica per migliorare acustica, isolamento termico ed efficienza energetica.",
         icon: <Droplets size={70} className='text-primary' />
     },
 ]
@@ -55,16 +55,18 @@ export default function RifacimentoBagno() {
             <Hero
                 src="/hero2-ristr.webp"
                 title="Tinteggiatura e controsoffitti"
-                subtitle="Offriamo tinteggiature professionali per interni ed esterni, garantendo precisione, utilizzo di vernici di qualità e finiture personalizzate."
+                subtitle="Una ventata di fresco per la tua casa"
             />
             <div className="lg:px-24">
                 <Description
                     title="Tinteggiatura e controsoffitti"
-                    subtitle="Rinnova il tuo spazio con stile"
-                    firstText="Il nostro servizio di tinteggiatura garantisce pareti perfettamente rifinite grazie all'uso di vernici di alta qualità e tecniche professionali. Ci occupiamo della preparazione delle superfici, con rasature e stuccature che assicurano un risultato uniforme e duraturo. Offriamo inoltre una vasta gamma di colori e finiture per adattarci a qualsiasi esigenza estetica."
-                    secondText="Realizziamo strutture in cartongesso o materiali specifici, ideali per migliorare l’isolamento acustico e termico, nascondere impianti e creare effetti di design. L'installazione è curata nei minimi dettagli, con soluzioni personalizzate che coniugano estetica e funzionalità."
+                    subtitle="Rinnova i tuoi ambienti con la tua personalità."
+                    firstText="Il miglior modo per svoltare in fretta i tuoi spazi è sicuramente la tinteggiatura. Grazie alla preparazione delle pareti data dalla rasatura, dalla stuccatura professionale e dall’uso delle migliori vernici un ambiente può totalmente cambiare: che tu voglia dare carattere alla tua casa o anche solo dare una rinfrescata dopo i mesi invernali, questo è ciò che fa per te. "
+                    secondText="Ma non solo, anche un controsoffitto può incredibilmente migliorare la tua casa: è perfetto per il miglioramento dell’isolamento acustico e termico, ma anche per nascondere qualche impianto non troppo bello da vedere e creare effetti di design. 
+Basta poco per poter Riabitare la tua casa. "
                 />
-                <GalleryWithThumbnails images={images} title="I nostri lavori" subtitle="Tinteggiature e controsoffitti professionali" description="La qualità del nostro servizio di tinteggiatura e controsoffitto si basa su precisione, materiali di pregio e attenzione ai dettagli. Offriamo finiture impeccabili, con colori resistenti e soluzioni personalizzate. I controsoffitti sono realizzati per garantire estetica, isolamento e durata nel tempo, utilizzando tecniche avanzate e un’installazione accurata per risultati professionali." />
+                <GalleryWithThumbnails images={images} title="I nostri lavori" subtitle="Tinteggiature e controsoffitti professionali" description="Precisione, materiali di pregio, attenzione ai dettagli sono gli ingredienti che fanno si che la qualità delle nostre tinteggiature e dei nostri controsoffitti sia impareggiabile.
+Per te finiture impeccabili, colori resistenti e soluzioni personalizzate, per garantirti bellezza e soprattutto efficienza e durata nel tempo. " />
                 <Servizi services={services} />
                 <CtaFooter img="/galleria-tint/tinteggiatura3.webp" />
             </div>

@@ -18,13 +18,15 @@ export const Servizi = ({ services }: {
             </div>
             <div className="flex flex-col lg:flex-row justify-center gap-10 mt-14 px-10 items-center lg:items-start flex-wrap">
                 {services.map((service, index) => (
-                    <div key={index} className="flex flex-col max-w-[350px] border px-7 py-5 shadow-md min-h-[400px] mt-5  rounded-md">
-                        {service.icon}
+                    <div key={index} className="flex flex-col justify-between max-w-[350px] border px-7 py-5 shadow-md min-h-[360px] mt-5  rounded-md">
                         <div>
-                            <p className="text-2xl font-bold mt-8">{service.title}</p>
-                            <p className="text-lg">
-                                {service.description}
-                            </p>
+                            {service.icon}
+                            <div>
+                                <p className="text-2xl font-bold mt-8">{service.title}</p>
+                                <p className="text-lg">
+                                    {service.description}
+                                </p>
+                            </div>
                         </div>
                         {
                             service.url && (
