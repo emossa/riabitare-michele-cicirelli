@@ -10,7 +10,7 @@ const ChatWidget = () => {
         <FloatingWhatsApp
             statusMessage="Online"
             chatMessage="Hai bisogno di aiuto?"
-            phoneNumber="393298064862"
+            phoneNumber="393471294953"
             accountName="Riabitare Ristrutturazioni"
             placeholder="Scrivi un messaggio..."
             buttonStyle={{
